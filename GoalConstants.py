@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class AccessObjects(Enum):
+class GoalAccessObjects(Enum):
     Time = "Time"
     PartialResult = "PartialResult"
     TeamName = "TeamName"

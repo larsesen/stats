@@ -1,9 +1,9 @@
 from ReadFile import readJsonData
 
-from dto.Match import makeTimeInMatch
+from dto.Match import makeTimestampInMatch
 from dto.Period import makeTimeInPeriod
 
-from GoalConstants import AccessObjects
+from GoalConstants import GoalAccessObjects
 
 
 BMIL = "BMIL Herrer 1"
@@ -18,7 +18,7 @@ def getTimestampsForGoals(path):
 def getTimestampsInMatch(data):
     timestamps = []
     for goal in data:
-        if goal[AccessObjects.TeamName] == BMIL:
+        if goal[GoalAccessObjects.TeamName] == BMIL:
             timestamps.append(createMatchTimestamp(goal))
     return timestamps
 
@@ -26,24 +26,25 @@ def getTimestampsInMatch(data):
 def getTimestampsInPeriod(data):
     timestamps = []
     for goal in data:
-        if goal[AccessObjects.TeamName] == BMIL:
+        if goal[GoalAccessObjects.TeamName] == BMIL:
             matchTimeStamp = createMatchTimestamp(goal)
             timestamps.append(makeTimeInPeriod(matchTimeStamp.minutes, matchTimeStamp.seconds))
     return timestamps
 
 
 def createMatchTimestamp(goal):
-    time = goal[AccessObjects.Time]
+    time = goal[GoalAccessObjects.Time]
 
-    if time == "Str":
+    if time == "Str": #no timestamp for penalty shootout
         return
     timeAndPeriod = time.split("-")
     period = int(timeAndPeriod[0])
     minutesAndSeconds = timeAndPeriod[1].strip().split(':')
-    timestamp = makeTimeInMatch(period, minutesAndSeconds[0], minutesAndSeconds[1])
+    timestamp = makeTimestampInMatch(period, minutesAndSeconds[0], minutesAndSeconds[1])
     return timestamp
 
 
 def printTimestamps(tidspunkter):
     for tidspunkt in tidspunkter:
-        print tidspunkt
+        if tidspunkt is not None:
+            print tidspunkt
