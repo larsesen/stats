@@ -1,3 +1,5 @@
+from ReadFile import readJsonData
+
 from dto.Match import makeTimeInMatch
 from dto.Period import makeTimeInPeriod
 
@@ -5,6 +7,13 @@ from GoalConstants import AccessObjects
 
 
 BMIL = "BMIL Herrer 1"
+
+
+def getTimestampsForGoals(path):
+    first = readJsonData(path)
+    timestampsSecond = getTimestampsInMatch(first)
+    return timestampsSecond
+
 
 def getTimestampsInMatch(data):
     timestamps = []
@@ -25,6 +34,9 @@ def getTimestampsInPeriod(data):
 
 def createMatchTimestamp(goal):
     time = goal[AccessObjects.Time]
+
+    if time == "Str":
+        return
     timeAndPeriod = time.split("-")
     period = int(timeAndPeriod[0])
     minutesAndSeconds = timeAndPeriod[1].strip().split(':')
