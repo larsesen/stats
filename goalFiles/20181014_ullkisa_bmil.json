@@ -1,0 +1,101 @@
+[{
+	"Time": "1 - 08:53",
+	"PartialResult": "0-1",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "50. Emil Varre Sandøy",
+	"Assist": "60. Bendik Fürst Mustad",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "1 - 13:38",
+	"PartialResult": "1-1",
+	"TeamName": "Ullensaker/Kisa IL",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+	"Scorer": "34. Dag Staffan Lindskog",
+	"Assist": "66. Aleksi Pelo",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 02:13",
+	"PartialResult": "1-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "39. Sondre Knudsen Røstgård",
+	"Assist": "10. Thomas Bergsmark",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 04:10",
+	"PartialResult": "1-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "10. Thomas Bergsmark",
+	"Assist": "39. Sondre Knudsen Røstgård",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 09:01",
+	"PartialResult": "1-4",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "20. Andre Antonio Valente",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 13:50",
+	"PartialResult": "2-4",
+	"TeamName": "Ullensaker/Kisa IL",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+	"Scorer": "46. Bendik Bjørgaas Austad",
+	"Assist": "74. Jonatan Melander",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 12:03",
+	"PartialResult": "2-5",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "27. Sondre Rørvik",
+	"Assist": "12. Lasse Anthonisen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 16:01",
+	"PartialResult": "3-5",
+	"TeamName": "Ullensaker/Kisa IL",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+	"Scorer": "34. Dag Staffan Lindskog",
+	"Assist": "74. Jonatan Melander",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 17:15",
+	"PartialResult": "3-6",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "25. Frederic Ringvold Westheim",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 19:43",
+	"PartialResult": "3-7",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "10. Thomas Bergsmark",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}]

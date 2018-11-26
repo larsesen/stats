@@ -1,0 +1,111 @@
+[{
+	"Time": "1 - 08:24",
+	"PartialResult": "0-1",
+	"TeamName": "Øreåsen",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+	"Scorer": "11. Christer Olsen",
+	"Assist": "7. Atle Repstad Andersen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 02:50",
+	"PartialResult": "1-1",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "18. Aksel Tjøtta Stenvold",
+	"Assist": "27. Sondre Rørvik",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 10:24",
+	"PartialResult": "1-2",
+	"TeamName": "Øreåsen",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+	"Scorer": "77. Stian Jensen",
+	"Assist": "13. Daniel Gustav Baronowsky",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 02:07",
+	"PartialResult": "2-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "18. Aksel Tjøtta Stenvold",
+	"Assist": "20. Andre Antonio Valente",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 02:40",
+	"PartialResult": "3-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "10. Thomas Bergsmark",
+	"Assist": "20. Andre Antonio Valente",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 05:20",
+	"PartialResult": "3-3",
+	"TeamName": "Øreåsen",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+	"Scorer": "15. Niclas Antonsen",
+	"Assist": "13. Daniel Gustav Baronowsky",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 10:09",
+	"PartialResult": "4-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "25. Frederic Ringvold Westheim",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 12:20",
+	"PartialResult": "5-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "20. Andre Antonio Valente",
+	"Assist": "50. Emil Varre Sandøy",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 18:44",
+	"PartialResult": "6-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "25. Frederic Ringvold Westheim",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 19:02",
+	"PartialResult": "7-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "6. Truls Eriksen",
+	"Assist": "26. Tom Egil Arnesen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 19:26",
+	"PartialResult": "7-4",
+	"TeamName": "Øreåsen",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=530254",
+	"Scorer": "11. Christer Olsen",
+	"Assist": "77. Stian Jensen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}]

@@ -1,0 +1,111 @@
+[{
+	"Time": "1 - 09:41",
+	"PartialResult": "0-1",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "19. Michael Zlatan Sven Åsberg",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "1 - 11:48",
+	"PartialResult": "1-1",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "7. Lars Petter Kandre",
+	"Assist": "68. Henrik Svanæs",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 00:40",
+	"PartialResult": "2-1",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "66. Patrik Mikael Joakim Ohlsson",
+	"Assist": "88. Per Konrad Bergetoft-Karlsson",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 09:00",
+	"PartialResult": "3-1",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "14. Oskar Kristoffer Persson",
+	"Assist": "23. Kim Peter Åke Lönn",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 10:40",
+	"PartialResult": "3-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "10. Thomas Bergsmark",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 12:05",
+	"PartialResult": "4-2",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "23. Kim Peter Åke Lönn",
+	"Assist": "19. Nicklas Regin",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 01:30",
+	"PartialResult": "5-2",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "23. Kim Peter Åke Lönn",
+	"Assist": "69. Espen Kjerup Jørgensen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 04:10",
+	"PartialResult": "6-2",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "23. Kim Peter Åke Lönn",
+	"Assist": "7. Lars Petter Kandre",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 09:01",
+	"PartialResult": "6-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "20. Andre Antonio Valente",
+	"Assist": "9. Sondre Knudsen Røstgård",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 13:31",
+	"PartialResult": "7-3",
+	"TeamName": "Lyn Innebandy",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+	"Scorer": "88. Per Konrad Bergetoft-Karlsson",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 14:39",
+	"PartialResult": "7-4",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "9. Sondre Knudsen Røstgård",
+	"Assist": "31. Kim Haldorsen Straumsnes",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}]

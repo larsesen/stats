@@ -1,0 +1,111 @@
+[{
+	"Time": "1 - 00:34",
+	"PartialResult": "1-0",
+	"TeamName": "Vålerenga",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+	"Scorer": "27. Niclas Johansson",
+	"Assist": "8. Magnus Kjell",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "1 - 09:09",
+	"PartialResult": "1-1",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "10. Thomas Bergsmark",
+	"Assist": "29. Bendik Fürst Mustad",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "1 - 14:44",
+	"PartialResult": "1-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "29. Bendik Fürst Mustad",
+	"Assist": "50. Emil Varre Sandøy",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 03:05",
+	"PartialResult": "2-2",
+	"TeamName": "Vålerenga",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+	"Scorer": "9. Hans Lukas Larsson",
+	"Assist": "13. Victor Gustaf Ekestubbe",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 04:59",
+	"PartialResult": "2-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "29. Bendik Fürst Mustad",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 05:40",
+	"PartialResult": "2-4",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "19. Michael Zlatan Sven Åsberg",
+	"Assist": "4 . Andreas Ervik Heggernes",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 15:05",
+	"PartialResult": "3-4",
+	"TeamName": "Vålerenga",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+	"Scorer": "25. Torben Sollie Hjuring",
+	"Assist": "21. Peter Johannes Holback",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 16:19",
+	"PartialResult": "4-4",
+	"TeamName": "Vålerenga",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+	"Scorer": "10. Mathias Erik Johan Sjökvist",
+	"Assist": "13. Victor Gustaf Ekestubbe",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "3 - 08:21",
+	"PartialResult": "4-5",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "26. Tom Egil Arnesen",
+	"Assist": "5. Mads Sand Dørstad",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 10:19",
+	"PartialResult": "5-5",
+	"TeamName": "Vålerenga",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=580780",
+	"Scorer": "71. Sindre Sebastian Halvorsen",
+	"Assist": "16. Per Torsten Wångersjö",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "Str",
+	"PartialResult": "5-6",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": " ",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}]
