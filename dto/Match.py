@@ -1,4 +1,4 @@
-class TimeOfGoal(object):
+class TimeInMatch(object):
     period = 0
     minutes = 0
     seconds = 0
@@ -11,6 +11,7 @@ class TimeOfGoal(object):
     def __str__(self):
         return "period={0}, minutes={1}, seconds={2}".format(self.period, self.minutes, self.seconds)
 
-def makeTimeOfGoal(period, minutes, seconds):
-    timeOfGoal = TimeOfGoal(period, minutes, seconds)
-    return timeOfGoal
+
+def makeTimeInMatch(period, minutes, seconds):
+    time_of_goal = TimeInMatch(period, minutes, seconds)
+    return time_of_goal
