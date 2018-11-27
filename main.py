@@ -1,14 +1,11 @@
-import RetrieveDataFromFile
-import dto.Match
+import StatsUtil
 
 from PlotHistogram import get_plot
 
+goals = StatsUtil.get_goal_timestamps()
+goal_timestamps = StatsUtil.get_goal_time_in_seconds(goals)
 
-def get_goal_timestamps():
-    return RetrieveDataFromFile.get_goal_timestamps_for_match()
+StatsUtil.print_timestamps(goal_timestamps)
 
-
-#TODO: Clean names and variables into methods
-goal_timestamps = dto.Match.get_goal_time_in_seconds(get_goal_timestamps())
 plot = get_plot(goal_timestamps)
 plot.show()

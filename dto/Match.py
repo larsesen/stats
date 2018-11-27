@@ -24,18 +24,3 @@ class TimeInMatch(object):
 def make_timestamp_in_match(period, minutes, seconds):
     time_of_goal = TimeInMatch(period, minutes, seconds)
     return time_of_goal
-
-
-def get_goal_time_in_seconds(goals):
-    timestamps_in_seconds = []
-    for goal in goals:
-        if goal is not None:
-            period = goal.get_period()
-            minutes = goal.get_minutes()
-            seconds = goal.get_seconds()
-
-            time_in_seconds = ((int(period) -1) * 20 * 60) + (int(minutes) * 60) + int(seconds)
-
-            timestamps_in_seconds.append(time_in_seconds)
-    timestamps_in_seconds.sort()
-    return timestamps_in_seconds

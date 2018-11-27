@@ -35,8 +35,8 @@ def get_goal_timestamps_for_match():
 
 def get_timestamps_from_file(path):
     first = read_json_data(path)
-    timestampsSecond = get_timestamps_in_match(first)
-    return timestampsSecond
+    timestamps_second = get_timestamps_in_match(first)
+    return timestamps_second
 
 
 def get_timestamps_in_match(data):
@@ -66,9 +66,3 @@ def create_match_timestamp(goal):
     minutes_and_seconds = time_and_period[1].strip().split(':')
     timestamp = make_timestamp_in_match(period, minutes_and_seconds[0], minutes_and_seconds[1])
     return timestamp
-
-
-def print_timestamps(timestamps):
-    for timestamp in timestamps:
-        if timestamp is not None:
-            print timestamp
