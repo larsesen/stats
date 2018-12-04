@@ -1,11 +1,12 @@
-import StatsUtil
+import MapFileToObjects
 
-from PlotHistogram import get_plot
+import dto.Match as Match
 
-goals = StatsUtil.get_goal_timestamps()
-goal_timestamps = StatsUtil.get_goal_time_in_seconds(goals)
+directory = "goalFiles/"
+file_names = MapFileToObjects.get_matches_from_directory(directory)
 
-StatsUtil.print_timestamps(goal_timestamps)
+for file_name in file_names:
+    goals = MapFileToObjects.get_goals_from_file(directory + file_name)
+    match = Match.Match("home", "away", goals)
+    print match
 
-plot = get_plot(goal_timestamps)
-plot.show()
