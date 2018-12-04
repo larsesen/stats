@@ -1,0 +1,113 @@
+[
+  {
+	"Time": "1 - 12:42",
+	"PartialResult": "0-1",
+	"TeamName": "Lillestrøm Innebandyklubb",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+	"Scorer": "17. Kristian Wiker Holmemo",
+	"Assist": "",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 01:00",
+	"PartialResult": "1-1",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "10. Thomas Bergsmark",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 06:01",
+	"PartialResult": "1-2",
+	"TeamName": "Lillestrøm Innebandyklubb",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+	"Scorer": "4. Thomas Camillo Christiansen",
+	"Assist": "42. Sondre Stokke",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 06:29",
+	"PartialResult": "2-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "20. Andre Antonio Valente",
+	"Assist": "10. Thomas Bergsmark",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 08:25",
+	"PartialResult": "3-2",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "13. Truls Havre",
+	"Assist": "6. Truls Eriksen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 08:53",
+	"PartialResult": "3-3",
+	"TeamName": "Lillestrøm Innebandyklubb",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+	"Scorer": "4. Thomas Camillo Christiansen",
+	"Assist": "31. Per Nils Pontus Lundberg",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "2 - 13:30",
+	"PartialResult": "4-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "10. Thomas Bergsmark",
+	"Assist": "60. Bendik Fürst Mustad",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 13:40",
+	"PartialResult": "5-3",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "50. Emil Varre Sandøy",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}, {
+	"Time": "2 - 18:29",
+	"PartialResult": "5-4",
+	"TeamName": "Lillestrøm Innebandyklubb",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+	"Scorer": "4. Thomas Camillo Christiansen",
+	"Assist": "22. Anders Nordhagen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 06:38",
+	"PartialResult": "5-5",
+	"TeamName": "Lillestrøm Innebandyklubb",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581696",
+	"Scorer": "22. Anders Nordhagen",
+	"Assist": "11. Kenneth Rønningen",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": false
+}, {
+	"Time": "3 - 19:19",
+	"PartialResult": "6-5",
+	"TeamName": "BMIL Herrer 1",
+	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+	"Scorer": "60. Bendik Fürst Mustad",
+	"Assist": "50. Emil Varre Sandøy",
+	"IsPenaltyGoal": false,
+	"IsOwnGoal": false,
+	"IsHomeGoal": true
+}
+]
