@@ -5,17 +5,16 @@ sys.setdefaultencoding('utf8')
 
 
 class Match(object):
-    home_team = ""
-    away_team = ""
+    match_info = {}
     goals = []
 
-    def __init__(self, home_team, away_team, goals):
-        self.home_team = home_team
-        self.away_team = away_team
+    def __init__(self, match_info, goals):
+        self.match_info = match_info
         self.goals = goals
 
     def __str__(self):
-        match_report = ""
+        match_report = "Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}\n"\
+            .format(self.match_info.date, self.match_info.arena, self.match_info.home_team, self.match_info.away_team, self.match_info.result)
         for goal in self.goals:
             match_report += goal.__str__() + "\n"
         return match_report

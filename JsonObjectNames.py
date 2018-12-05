@@ -14,7 +14,7 @@ class GoalObject(Enum):
 
 
 class MatchInfoObject(Enum):
-    MatchDate = "MatchDate"
+    MatchDate = "MatchDateFormatted"
     Results = "ResultsFormatted"
     Arena = "ActivityAreaName"
     HomeTeam = "HomeTeamName"
