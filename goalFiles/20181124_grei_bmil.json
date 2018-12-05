@@ -1,173 +1,239 @@
-[
-	{
-		"Time": "1 - 02:31",
-		"PartialResult": "1-0",
-		"TeamName": "Grei",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
-		"Scorer": "20. Erik Eck Jørgensen",
-		"Assist": "44. Marko Johannes Länsman",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": true
-	}, {
-		"Time": "1 - 04:23",
-		"PartialResult": "1-1",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "9. Sondre Knudsen Røstgård",
-		"Assist": "18. Aksel Tjøtta Stenvold",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "1 - 07:02",
-		"PartialResult": "1-2",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "Selvmål",
-		"Assist": "",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": true,
-		"IsHomeGoal": false
-	}, {
-		"Time": "1 - 09:16",
-		"PartialResult": "2-2",
-		"TeamName": "Grei",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
-		"Scorer": "18. Stian Teksdal",
-		"Assist": "25. Lars Arne Rønningen",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": true
-	}, {
-		"Time": "1 - 13:23",
-		"PartialResult": "3-2",
-		"TeamName": "Grei",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
-		"Scorer": "20. Erik Eck Jørgensen",
-		"Assist": "",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": true
-	}, {
-		"Time": "1 - 14:19",
-		"PartialResult": "3-3",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "50. Emil Varre Sandøy",
-		"Assist": "29. Bendik Fürst Mustad",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "1 - 17:18",
-		"PartialResult": "3-4",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "10. Thomas Bergsmark",
-		"Assist": "",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "1 - 18:22",
-		"PartialResult": "3-5",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "19. Michael Zlatan Sven Åsberg",
-		"Assist": "18. Aksel Tjøtta Stenvold",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "2 - 05:55",
-		"PartialResult": "3-6",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "29. Bendik Fürst Mustad (Straffeslag)",
-		"Assist": "",
-		"IsPenaltyGoal": true,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "2 - 12:33",
-		"PartialResult": "3-7",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "18. Aksel Tjøtta Stenvold",
-		"Assist": "9. Sondre Knudsen Røstgård",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "2 - 14:19",
-		"PartialResult": "4-7",
-		"TeamName": "Grei",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
-		"Scorer": "20. Erik Eck Jørgensen",
-		"Assist": "18. Stian Teksdal",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": true
-	}, {
-		"Time": "2 - 15:17",
-		"PartialResult": "4-8",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "20. Andre Antonio Valente",
-		"Assist": "10. Thomas Bergsmark",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "2 - 19:12",
-		"PartialResult": "5-8",
-		"TeamName": "Grei",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
-		"Scorer": "18. Stian Teksdal",
-		"Assist": "20. Erik Eck Jørgensen",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": true
-	}, {
-		"Time": "2 - 19:51",
-		"PartialResult": "5-9",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "50. Emil Varre Sandøy",
-		"Assist": "29. Bendik Fürst Mustad",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "3 - 07:48",
-		"PartialResult": "5-10",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "50. Emil Varre Sandøy",
-		"Assist": "10. Thomas Bergsmark",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "3 - 12:34",
-		"PartialResult": "5-11",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "4 . Andreas Ervik Heggernes",
-		"Assist": "18. Aksel Tjøtta Stenvold",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}, {
-		"Time": "3 - 15:05",
-		"PartialResult": "5-12",
-		"TeamName": "BMIL Herrer 1",
-		"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-		"Scorer": "50. Emil Varre Sandøy",
-		"Assist": "29. Bendik Fürst Mustad",
-		"IsPenaltyGoal": false,
-		"IsOwnGoal": false,
-		"IsHomeGoal": false
-	}
-]
+{
+  "match_info": [
+    {
+      "MatchId": 6861115,
+      "MatchNo": "1331202033",
+      "MatchDate": "2018-11-24T00:00:00",
+      "MatchDateFormatted": "24.11.2018",
+      "Time": "16:00 - 17:54",
+      "RoundId": 9,
+      "RoundName": "Runde 9",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=9",
+      "Referees": [
+        {
+          "Name": "Dommer Rune Davidsen",
+          "PersonId": 4886969,
+          "RefereeId": 226843,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=VCtmOG56YzVxajR4RGlGcnplRm9Mdz090"
+        },
+        {
+          "Name": "Dommer Jon Åge Meller",
+          "PersonId": 7736256,
+          "RefereeId": 223625,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=eWVrVjBHNnZIOURNY0JHMGhEdGZxZz090"
+        }
+      ],
+      "EndResult": "5-12",
+      "PartialResult": " 3-5, 2-4, 0-3",
+      "ResultsFormatted": "5-12 (3-5, 2-4, 0-3)",
+      "ActivityName": "Innebandy",
+      "ActivityAreaId": 210993,
+      "ActivityAreaName": "Apalløkka 1",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=210993",
+      "SeasonId": 200834,
+      "TournamentId": 383884,
+      "TournamentName": "1. div. østland menn - NBF",
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "LinkId": 6861115,
+      "HasMatchReportFile": true,
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861115",
+      "HomeTeamId": 504455,
+      "HomeTeamName": "Grei",
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "AwayTeamId": 581680,
+      "AwayTeamName": "BMIL",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "EventTeamInfo": "Grei - BMIL",
+      "Public": "16"
+    }
+  ],
+  "goals": [
+    {
+      "Time": "1 - 02:31",
+      "PartialResult": "1-0",
+      "TeamName": "Grei",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "Scorer": "20. Erik Eck Jørgensen",
+      "Assist": "44. Marko Johannes Länsman",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 04:23",
+      "PartialResult": "1-1",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "9. Sondre Knudsen Røstgård",
+      "Assist": "18. Aksel Tjøtta Stenvold",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 07:02",
+      "PartialResult": "1-2",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "Selvmål",
+      "Assist": "",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": true,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 09:16",
+      "PartialResult": "2-2",
+      "TeamName": "Grei",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "Scorer": "18. Stian Teksdal",
+      "Assist": "25. Lars Arne Rønningen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 13:23",
+      "PartialResult": "3-2",
+      "TeamName": "Grei",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "Scorer": "20. Erik Eck Jørgensen",
+      "Assist": "",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 14:19",
+      "PartialResult": "3-3",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "50. Emil Varre Sandøy",
+      "Assist": "29. Bendik Fürst Mustad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 17:18",
+      "PartialResult": "3-4",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "10. Thomas Bergsmark",
+      "Assist": "",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 18:22",
+      "PartialResult": "3-5",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "19. Michael Zlatan Sven Åsberg",
+      "Assist": "18. Aksel Tjøtta Stenvold",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 05:55",
+      "PartialResult": "3-6",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "29. Bendik Fürst Mustad (Straffeslag)",
+      "Assist": "",
+      "IsPenaltyGoal": true,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 12:33",
+      "PartialResult": "3-7",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "18. Aksel Tjøtta Stenvold",
+      "Assist": "9. Sondre Knudsen Røstgård",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 14:19",
+      "PartialResult": "4-7",
+      "TeamName": "Grei",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "Scorer": "20. Erik Eck Jørgensen",
+      "Assist": "18. Stian Teksdal",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 15:17",
+      "PartialResult": "4-8",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "20. Andre Antonio Valente",
+      "Assist": "10. Thomas Bergsmark",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 19:12",
+      "PartialResult": "5-8",
+      "TeamName": "Grei",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=504455",
+      "Scorer": "18. Stian Teksdal",
+      "Assist": "20. Erik Eck Jørgensen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 19:51",
+      "PartialResult": "5-9",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "50. Emil Varre Sandøy",
+      "Assist": "29. Bendik Fürst Mustad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 07:48",
+      "PartialResult": "5-10",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "50. Emil Varre Sandøy",
+      "Assist": "10. Thomas Bergsmark",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 12:34",
+      "PartialResult": "5-11",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "4 . Andreas Ervik Heggernes",
+      "Assist": "18. Aksel Tjøtta Stenvold",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 15:05",
+      "PartialResult": "5-12",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "50. Emil Varre Sandøy",
+      "Assist": "29. Bendik Fürst Mustad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    }
+  ]
+}

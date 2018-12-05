@@ -15,7 +15,7 @@ class Match(object):
         self.goals = goals
 
     def __str__(self):
-        match_report = "Home team = {} \nAway team = {}\n".format(self.home_team, self.away_team)
+        match_report = ""
         for goal in self.goals:
             match_report += goal.__str__() + "\n"
         return match_report

@@ -1,7 +1,7 @@
 from enum import Enum
 
 
-class GoalAccessObjects(Enum):
+class GoalObject(Enum):
     Time = "Time"
     PartialResult = "PartialResult"
     TeamName = "TeamName"
@@ -11,3 +11,11 @@ class GoalAccessObjects(Enum):
     IsPenaltyGoal = "IsPenaltyGoal"
     IsOwnGoal = "IsOwnGoal"
     IsHomeGoal = "IsHomeGoal"
+
+
+class MatchInfoObject(Enum):
+    MatchDate = "MatchDate"
+    Results = "ResultsFormatted"
+    Arena = "ActivityAreaName"
+    HomeTeam = "HomeTeamName"
+    AwayTeam = "AwayTeamName"

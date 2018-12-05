@@ -1,111 +1,173 @@
-[{
-	"Time": "1 - 05:54",
-	"PartialResult": "1-0",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": "60. Bendik Fürst Mustad",
-	"Assist": "47. Kim Haldorsen Straumsnes",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}, {
-	"Time": "1 - 08:16",
-	"PartialResult": "2-0",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": "60. Bendik Fürst Mustad",
-	"Assist": "50. Emil Varre Sandøy",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}, {
-	"Time": "1 - 14:56",
-	"PartialResult": "3-0",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": "20. Andre Antonio Valente",
-	"Assist": "10. Thomas Bergsmark",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}, {
-	"Time": "1 - 16:00",
-	"PartialResult": "3-1",
-	"TeamName": "Lyn Innebandy",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
-	"Scorer": "26. Oscar A Ojala",
-	"Assist": "15. Espen Kjerup Jørgensen",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": false
-}, {
-	"Time": "2 - 07:13",
-	"PartialResult": "4-1",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": "4 . Andreas Ervik Heggernes",
-	"Assist": "47. Kim Haldorsen Straumsnes",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}, {
-	"Time": "2 - 14:43",
-	"PartialResult": "4-2",
-	"TeamName": "Lyn Innebandy",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
-	"Scorer": "29. Oskar Kristoffer Persson",
-	"Assist": "16. Nicklas Regin",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": false
-}, {
-	"Time": "3 - 11:31",
-	"PartialResult": "4-3",
-	"TeamName": "Lyn Innebandy",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
-	"Scorer": "17. Lars Petter Kandre",
-	"Assist": "21. Per Konrad Bergetoft-Karlsson",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": false
-}, {
-	"Time": "3 - 13:28",
-	"PartialResult": "5-3",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": "60. Bendik Fürst Mustad",
-	"Assist": "10. Thomas Bergsmark",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}, {
-	"Time": "3 - 16:56",
-	"PartialResult": "5-4",
-	"TeamName": "Lyn Innebandy",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
-	"Scorer": "29. Oskar Kristoffer Persson",
-	"Assist": "17. Lars Petter Kandre",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": false
-}, {
-	"Time": "3 - 17:35",
-	"PartialResult": "5-5",
-	"TeamName": "Lyn Innebandy",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
-	"Scorer": "26. Oscar A Ojala",
-	"Assist": "15. Espen Kjerup Jørgensen",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": false
-}, {
-	"Time": "Str",
-	"PartialResult": "6-5",
-	"TeamName": "BMIL Herrer 1",
-	"TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
-	"Scorer": " ",
-	"Assist": "",
-	"IsPenaltyGoal": false,
-	"IsOwnGoal": false,
-	"IsHomeGoal": true
-}]
+{
+  "match_info": [
+    {
+      "MatchId": 6861114,
+      "MatchNo": "1331202032",
+      "MatchDate": "2018-11-17T00:00:00",
+      "MatchDateFormatted": "17.11.2018",
+      "Time": "18:00 - 18:02",
+      "RoundId": 8,
+      "RoundName": "Runde 8",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=8",
+      "Referees": [
+        {
+          "Name": "Dommer Espen Sjetne",
+          "PersonId": 5689960,
+          "RefereeId": 300590,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=ekFWZGhFcS9lYnZxVDFzL3drYmtzdz090"
+        },
+        {
+          "Name": "Dommer Torbjørn Tveit Alvestrand",
+          "PersonId": 7736233,
+          "RefereeId": 300591,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=WXdscytTalhLc0xQcTl3QWhuUHdEQT090"
+        }
+      ],
+      "EndResult": "6-5",
+      "PartialResult": " 3-1, 1-1, 1-3, 1-0",
+      "ResultsFormatted": "6-5 (3-1, 1-1, 1-3, 1-0)",
+      "ActivityName": "Innebandy",
+      "ActivityAreaId": 213930,
+      "ActivityAreaName": "Skøyenhallen",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=213930",
+      "SeasonId": 200834,
+      "TournamentId": 383884,
+      "TournamentName": "1. div. østland menn - NBF",
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "LinkId": 6861114,
+      "HasMatchReportFile": true,
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861114",
+      "HomeTeamId": 581680,
+      "HomeTeamName": "BMIL",
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "AwayTeamId": 581673,
+      "AwayTeamName": "Lyn",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "EventTeamInfo": "BMIL - Lyn",
+      "Public": "33"
+    }
+  ],
+  "goals": [
+    {
+      "Time": "1 - 05:54",
+      "PartialResult": "1-0",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "60. Bendik Fürst Mustad",
+      "Assist": "47. Kim Haldorsen Straumsnes",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 08:16",
+      "PartialResult": "2-0",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "60. Bendik Fürst Mustad",
+      "Assist": "50. Emil Varre Sandøy",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 14:56",
+      "PartialResult": "3-0",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "20. Andre Antonio Valente",
+      "Assist": "10. Thomas Bergsmark",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 16:00",
+      "PartialResult": "3-1",
+      "TeamName": "Lyn Innebandy",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "Scorer": "26. Oscar A Ojala",
+      "Assist": "15. Espen Kjerup Jørgensen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 07:13",
+      "PartialResult": "4-1",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "4 . Andreas Ervik Heggernes",
+      "Assist": "47. Kim Haldorsen Straumsnes",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 14:43",
+      "PartialResult": "4-2",
+      "TeamName": "Lyn Innebandy",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "Scorer": "29. Oskar Kristoffer Persson",
+      "Assist": "16. Nicklas Regin",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 11:31",
+      "PartialResult": "4-3",
+      "TeamName": "Lyn Innebandy",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "Scorer": "17. Lars Petter Kandre",
+      "Assist": "21. Per Konrad Bergetoft-Karlsson",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 13:28",
+      "PartialResult": "5-3",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "60. Bendik Fürst Mustad",
+      "Assist": "10. Thomas Bergsmark",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "3 - 16:56",
+      "PartialResult": "5-4",
+      "TeamName": "Lyn Innebandy",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "Scorer": "29. Oskar Kristoffer Persson",
+      "Assist": "17. Lars Petter Kandre",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 17:35",
+      "PartialResult": "5-5",
+      "TeamName": "Lyn Innebandy",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581673",
+      "Scorer": "26. Oscar A Ojala",
+      "Assist": "15. Espen Kjerup Jørgensen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "Str",
+      "PartialResult": "6-5",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": " ",
+      "Assist": "",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    }
+  ]
+}
