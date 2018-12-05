@@ -44,7 +44,10 @@ def extract_goals(all_data):
         team_name = goal[GoalObject.TeamName]
         time = goal[GoalObject.Time]
 
-        if time != 'Str':  # penalty shootout does not have time
-            current = Goal.Goal(scorer, assist, partial_result, team_name, time)
-            goals.append(current)
+        if time == 'Str':
+            scorer = "Penalty shootout"
+            time = "3 - 20:00"
+
+        current = Goal.Goal(scorer, assist, partial_result, team_name, time)
+        goals.append(current)
     return goals
