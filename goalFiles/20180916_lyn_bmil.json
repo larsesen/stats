@@ -169,5 +169,49 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Lyn",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "1 - 05:07",
+          "HomePenalty": "66. Patrik Mikael Joakim Ohlsson, 2 min, Obstruksjon",
+          "AwayTime": "2 - 07:32",
+          "AwayPenalty": "50. Emil Varre Sandøy, 2 min, Slag"
+        },
+        {
+          "HomeTime": "2 - 13:07",
+          "HomePenalty": "23. Kim Peter Åke Lönn, 2 min, Forsinkelse av spillet",
+          "AwayTime": "2 - 19:24",
+          "AwayPenalty": "29. Bendik Fürst Mustad, 2 min, Slag"
+        },
+        {
+          "HomeTime": "2 - 14:56",
+          "HomePenalty": "19. Nicklas Regin, 2 min, Hardt spill",
+          "AwayTime": "3 - 17:37",
+          "AwayPenalty": "50. Emil Varre Sandøy, 2 min, Hardt spill"
+        },
+        {
+          "HomeTime": "2 - 18:12",
+          "HomePenalty": "69. Espen Kjerup Jørgensen, 2 min, Låsing av kølle",
+          "AwayTime": "",
+          "AwayPenalty": ""
+        },
+        {
+          "HomeTime": "3 - 06:59",
+          "HomePenalty": "14. Oskar Kristoffer Persson, 2 min, Slag",
+          "AwayTime": "",
+          "AwayPenalty": ""
+        },
+        {
+          "HomeTime": "3 - 13:56",
+          "HomePenalty": "23. Kim Peter Åke Lönn, 2 min, Liggende spill",
+          "AwayTime": "",
+          "AwayPenalty": ""
+        }
+      ]
+    }
   ]
 }

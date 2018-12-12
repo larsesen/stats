@@ -18,7 +18,7 @@ class Goal(object):
         self.minutes, self.seconds = get_time_in_minutes_and_seconds(time)
 
     def __str__(self):
-        return "Result = {}, time = {}:{}, scorer = {}"\
+        return "Goal: {}, time = {}:{}, scorer = {}"\
             .format(self.partial_result, self.minutes, self.seconds, self.scorer)
 
 

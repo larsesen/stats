@@ -19,3 +19,13 @@ class MatchInfoObject(Enum):
     Arena = "ActivityAreaName"
     HomeTeam = "HomeTeamName"
     AwayTeam = "AwayTeamName"
+
+
+class PenaltyObject(Enum):
+    HomeTeam = "HomeTeam"
+    AwayTeam = "AwayTeam"
+    Penalties = "Penalties"
+    HomeTime = "HomeTime"
+    HomePenalty = "HomePenalty"
+    AwayTime = "AwayTime"
+    AwayPenalty = "AwayPenalty"
