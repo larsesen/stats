@@ -147,5 +147,12 @@
       "IsOwnGoal": false,
       "IsHomeGoal": true
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "BMIL",
+      "AwayTeam": "Ajer",
+      "Penalties": []
+    }
   ]
 }

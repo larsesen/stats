@@ -158,5 +158,43 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Ull/Kisa",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "1 - 11:16",
+          "HomePenalty": "66. Aleksi Pelo, 2 min, Slag",
+          "AwayTime": "2 - 05:05",
+          "AwayPenalty": "37. Lars Olav Davidsen Nedberg, 2 min, Gjentatte forseelser"
+        },
+        {
+          "HomeTime": "2 - 01:32",
+          "HomePenalty": "66. Aleksi Pelo, 2 min, Gjentatte forseelser",
+          "AwayTime": "3 - 05:09",
+          "AwayPenalty": "39. Sondre Knudsen Røstgård, 2 min, Slag"
+        },
+        {
+          "HomeTime": "2 - 03:35",
+          "HomePenalty": "97. Erik Jonas Niklasson, 2 min, Hardt spill",
+          "AwayTime": "3 - 15:23",
+          "AwayPenalty": "6. Truls Eriksen, 2 min, Slag"
+        },
+        {
+          "HomeTime": "2 - 09:48",
+          "HomePenalty": "97. Erik Jonas Niklasson, 2 min, Hardt spill",
+          "AwayTime": "",
+          "AwayPenalty": ""
+        },
+        {
+          "HomeTime": "3 - 05:09",
+          "HomePenalty": "20. Ronnie Mikael Alfred Adolfsson, 2 min, Protest",
+          "AwayTime": "",
+          "AwayPenalty": ""
+        }
+      ]
+    }
   ]
 }

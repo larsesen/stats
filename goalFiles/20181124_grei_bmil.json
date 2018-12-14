@@ -235,5 +235,31 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Grei",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "1 - 03:50",
+          "HomePenalty": "18. Stian Teksdal, 2 min, Slag",
+          "AwayTime": "2 - 02:07",
+          "AwayPenalty": "6. Truls Eriksen, 2 min, Ulovlig dytt (mot vant eller målbur)"
+        },
+        {
+          "HomeTime": "2 - 10:56",
+          "HomePenalty": "17. Jimmi Benteson Bruland, 12 min, Usportslig opptreden",
+          "AwayTime": "2 - 18:04",
+          "AwayPenalty": "29. Bendik Fürst Mustad, 2 min, Låsing av kølle"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 19:37",
+          "AwayPenalty": "80. Sondre Rørvik, 2 min, Holding"
+        }
+      ]
+    }
   ]
 }

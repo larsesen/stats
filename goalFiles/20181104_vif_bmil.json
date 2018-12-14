@@ -169,5 +169,37 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Vålerenga",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "2 - 18:45",
+          "HomePenalty": "13. Victor Gustaf Ekestubbe, 2 min, Slag",
+          "AwayTime": "1 - 16:10",
+          "AwayPenalty": "6. Truls Eriksen, 2 min, Liggende spill"
+        },
+        {
+          "HomeTime": "3 - 17:23",
+          "HomePenalty": "26. Janis Sladinis, 2 min, Feil avstand",
+          "AwayTime": "2 - 02:38",
+          "AwayPenalty": "6. Truls Eriksen, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "2 - 11:46",
+          "AwayPenalty": "26. Tom Egil Arnesen, 2 min, Spill med høy kølle"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 11:20",
+          "AwayPenalty": "29. Bendik Fürst Mustad, 2 min, Slag"
+        }
+      ]
+    }
   ]
 }

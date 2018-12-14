@@ -191,5 +191,37 @@
       "IsOwnGoal": false,
       "IsHomeGoal": true
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Lillestrøm",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "1 - 09:57",
+          "HomePenalty": "42. Sondre Stokke, 2 min, Slag",
+          "AwayTime": "2 - 00:13",
+          "AwayPenalty": "39. Sondre Knudsen Røstgård, 2 min, Spill med hånd"
+        },
+        {
+          "HomeTime": "3 - 05:14",
+          "HomePenalty": "4. Thomas Camillo Christiansen, 2 min, Slag",
+          "AwayTime": "2 - 08:23",
+          "AwayPenalty": "40. Sigurd Angell Berg, 2 min, Hardt spill"
+        },
+        {
+          "HomeTime": "3 - 12:29",
+          "HomePenalty": "42. Sondre Stokke, 2 min, Slag",
+          "AwayTime": "2 - 12:25",
+          "AwayPenalty": "47. Kim Haldorsen Straumsnes, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "2 - 16:05",
+          "AwayPenalty": "6. Truls Eriksen, 2 min, Slag"
+        }
+      ]
+    }
   ]
 }

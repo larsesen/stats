@@ -169,5 +169,31 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "BMIL",
+      "AwayTeam": "Øreåsen",
+      "Penalties": [
+        {
+          "HomeTime": "2 - 15:30",
+          "HomePenalty": "60. Bendik Fürst Mustad, 2 min, Ulovlig dytt (mot vant eller målbur)",
+          "AwayTime": "2 - 18:54",
+          "AwayPenalty": "22. Patrick Gerhard Fladby, 2 min, Hardt spill"
+        },
+        {
+          "HomeTime": "3 - 07:25",
+          "HomePenalty": "40. Sigurd Angell Berg, 2 min, Hardt spill",
+          "AwayTime": "3 - 01:54",
+          "AwayPenalty": "22. Patrick Gerhard Fladby, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 07:25",
+          "AwayPenalty": "17. Christian Olsen, 2 min, Hardt spill"
+        }
+      ]
+    }
   ]
 }

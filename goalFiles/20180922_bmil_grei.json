@@ -169,5 +169,25 @@
       "IsOwnGoal": false,
       "IsHomeGoal": false
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "BMIL",
+      "AwayTeam": "Grei",
+      "Penalties": [
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "1 - 18:07",
+          "AwayPenalty": "6. Joakim Ikiza Amundsen, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 19:10",
+          "AwayPenalty": "17. Jimmi Benteson Bruland, 2 min, Ulovlig dytt (mot vant eller målbur)"
+        }
+      ]
+    }
   ]
 }

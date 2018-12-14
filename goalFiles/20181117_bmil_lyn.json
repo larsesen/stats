@@ -169,5 +169,37 @@
       "IsOwnGoal": false,
       "IsHomeGoal": true
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "BMIL",
+      "AwayTeam": "Lyn",
+      "Penalties": [
+        {
+          "HomeTime": "1 - 02:11",
+          "HomePenalty": "27. Sondre Rørvik, 2 min, Obstruksjon",
+          "AwayTime": "1 - 04:25",
+          "AwayPenalty": "16. Nicklas Regin, 2 min, Slag"
+        },
+        {
+          "HomeTime": "2 - 14:29",
+          "HomePenalty": "40. Sigurd Angell Berg, 2 min, For mange spillere på banen",
+          "AwayTime": "1 - 13:57",
+          "AwayPenalty": "25. Patrik Mikael Joakim Ohlsson, 2 min, Spill med høy kølle"
+        },
+        {
+          "HomeTime": "2 - 17:57",
+          "HomePenalty": "40. Sigurd Angell Berg, 2 min, Liggende spill",
+          "AwayTime": "3 - 04:40",
+          "AwayPenalty": "24. Julia Paulina Johannesson, 2 min, For mange spillere på banen"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 13:28",
+          "AwayPenalty": "21. Per Konrad Bergetoft-Karlsson, 12 min, Usportslig opptreden"
+        }
+      ]
+    }
   ]
 }

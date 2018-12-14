@@ -169,5 +169,37 @@
       "IsOwnGoal": false,
       "IsHomeGoal": true
     }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "BMIL",
+      "AwayTeam": "Lillestrøm",
+      "Penalties": [
+        {
+          "HomeTime": "3 - 19:48",
+          "HomePenalty": "10. Thomas Bergsmark, 2 min, Ulovlig dytt (mot vant eller målbur)",
+          "AwayTime": "2 - 19:40",
+          "AwayPenalty": "44. John Einar Luther, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "2 - 19:40",
+          "AwayPenalty": "44. John Einar Luther, 2 min, Ulovlig dytt (mot vant eller målbur)"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 04:35",
+          "AwayPenalty": "44. John Einar Luther, 2 min, Slag"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 10:29",
+          "AwayPenalty": "44. John Einar Luther, 2 min, For mange spillere på banen"
+        }
+      ]
+    }
   ]
 }
