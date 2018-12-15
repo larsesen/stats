@@ -1,3 +1,6 @@
+import TimeParseUtils
+
+
 class Goal(object):
     scorer = ""
     assist = ""
@@ -15,31 +18,9 @@ class Goal(object):
         self.assist = assist
         self.partial_result = partial_result
         self.team_name = team_name
-        self.minutes, self.seconds = get_time_in_minutes_and_seconds(time)
+        self.period = TimeParseUtils.get_period_number(time)
+        self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
 
     def __str__(self):
         return "Goal: {}, time = {}:{}, scorer = {}"\
             .format(self.partial_result, self.minutes, self.seconds, self.scorer)
-
-
-def get_time_in_minutes_and_seconds(time):
-    period, timestamp = time.split('-')
-
-    minutes = int(timestamp.split(':')[0].strip())
-    seconds = int(timestamp.split(':')[1].strip())
-
-    period = int(period)
-    while period > 1:
-        minutes += 20
-        period -= 1
-
-    minutes = pretty_print_time(minutes)
-    seconds = pretty_print_time(seconds)
-    return minutes, seconds
-
-
-def pretty_print_time(number):
-    if number < 10:
-        number = '0' + str(number)
-    return number
-
