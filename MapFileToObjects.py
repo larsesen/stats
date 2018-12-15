@@ -1,7 +1,6 @@
 from ReadFile import read_json_data
-import dto.Goal as Goal
+import dto.MatchEvent as MatchEvent
 import dto.MatchInfo as Info
-import dto.Penalty as Penalty
 
 from os import listdir
 from os.path import isfile, join
@@ -50,7 +49,7 @@ def extract_goals(all_data):
             scorer = "Penalty shootout"
             time = "3 - 20:00"
 
-        current = Goal.Goal(scorer, assist, partial_result, team_name, time)
+        current = MatchEvent.Goal(scorer, assist, partial_result, team_name, time)
         goals.append(current)
     return goals
 
@@ -71,11 +70,11 @@ def extract_penalties(all_data):
             away_penalty = match_penalty[PenaltyObject.AwayPenalty]
 
             if home_time != "":
-                current = Penalty.Penalty(home_team, home_time, home_penalty)
+                current = MatchEvent.Penalty(home_team, home_time, home_penalty)
                 all_penalties.append(current)
 
             if away_time != "":
-                current = Penalty.Penalty(away_team, away_time, away_penalty)
+                current = MatchEvent.Penalty(away_team, away_time, away_penalty)
                 all_penalties.append(current)
 
     return all_penalties
