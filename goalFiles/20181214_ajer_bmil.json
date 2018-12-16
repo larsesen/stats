@@ -1,0 +1,171 @@
+{
+  "match_info": [
+    {
+      "MatchId": 6861126,
+      "MatchNo": "1331202044",
+      "MatchDate": "2018-12-14T00:00:00",
+      "MatchDateFormatted": "14.12.2018",
+      "Time": "19:30 - 21:10",
+      "RoundId": 11,
+      "RoundName": "Runde 11",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=11",
+      "Referees": [
+        {
+          "Name": "Dommer Morten Isnes",
+          "PersonId": 4360125,
+          "RefereeId": 223710,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=R2FrcHBCU2VIbU5uYmdzM3RMelR4QT090"
+        },
+        {
+          "Name": "Dommer Andreas Femtegjeld Sletten",
+          "PersonId": 7749152,
+          "RefereeId": 228670,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=TzFIOEh2QU9wY2tLQ0R6cWxtVC8zQT090"
+        }
+      ],
+      "EndResult": "3-6",
+      "PartialResult": " 1-4, 1-1, 1-1",
+      "ResultsFormatted": "3-6 (1-4, 1-1, 1-1)",
+      "ActivityName": "Innebandy",
+      "ActivityAreaId": 214305,
+      "ActivityAreaName": "Hedmarkshallen",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=214305",
+      "SeasonId": 200834,
+      "TournamentId": 383884,
+      "TournamentName": "1. div. østland menn - NBF",
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "LinkId": 6861126,
+      "HasMatchReportFile": true,
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861126",
+      "HomeTeamId": 495974,
+      "HomeTeamName": "Ajer",
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=495974",
+      "AwayTeamId": 581680,
+      "AwayTeamName": "BMIL",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "EventTeamInfo": "Ajer - BMIL",
+      "Public": "35"
+    }
+  ],
+  "goals": [
+    {
+      "Time": "1 - 01:34",
+      "PartialResult": "1-0",
+      "TeamName": "Ajer",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=495974",
+      "Scorer": "55. Magnus Bredeveien Maller",
+      "Assist": "50. Robin Jensen Sandlie",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 04:30",
+      "PartialResult": "1-1",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "4 . Andreas Ervik Heggernes",
+      "Assist": "80. Sondre Rørvik",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 07:17",
+      "PartialResult": "1-2",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "15. Sigurd Angell Berg",
+      "Assist": "4 . Andreas Ervik Heggernes",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 10:30",
+      "PartialResult": "1-3",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "18. Aksel Tjøtta Stenvold",
+      "Assist": "80. Sondre Rørvik",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 19:06",
+      "PartialResult": "1-4",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "13. Truls Havre",
+      "Assist": "41. Georg Bugge",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 03:49",
+      "PartialResult": "2-4",
+      "TeamName": "Ajer",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=495974",
+      "Scorer": "3. Helge Larsen",
+      "Assist": "77. Andréas Øien Jensen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 05:49",
+      "PartialResult": "2-5",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "29. Bendik Fürst Mustad (Straffeslag)",
+      "Assist": "",
+      "IsPenaltyGoal": true,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 07:01",
+      "PartialResult": "2-6",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "20. Andre Antonio Valente",
+      "Assist": "29. Bendik Fürst Mustad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 17:42",
+      "PartialResult": "3-6",
+      "TeamName": "Ajer",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=495974",
+      "Scorer": "3. Helge Larsen",
+      "Assist": "31. Mads Grosen Istre",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Ajer",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "2 - 14:25",
+          "HomePenalty": "31. Mads Grosen Istre, 2 min, Slag",
+          "AwayTime": "2 - 10:42",
+          "AwayPenalty": "15. Sigurd Angell Berg, 2 min, Feil bytte"
+        },
+        {
+          "HomeTime": "3 - 13:42",
+          "HomePenalty": "31. Mads Grosen Istre, 2 min, Slag",
+          "AwayTime": "3 - 19:35",
+          "AwayPenalty": "50. Emil Varre Sandøy, 2 min, Hardt spill"
+        }
+      ]
+    }
+  ]
+}
