@@ -9,9 +9,6 @@ for file_name in sorted(file_names):
     match_info, goals, penalties = MapFileToObjects.get_data_from_file(directory + file_name)
     match = Match.Match(match_info, goals, penalties)
     print match
-    print "\n"
+    print "****************************\n"
 
-# todo Separator between periods
-# todo sort matches by date
-# todo goals and penalties are displayed as they are given, not all goals followed by all penalties
 # todo pretty print goals and penalties so that different parameters are lined under each other
