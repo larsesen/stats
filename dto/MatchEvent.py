@@ -3,12 +3,14 @@ import TimeParseUtils
 
 class MatchEvent(object):
     # todo team?
+    sort_stamp = 0
     period = 0
     minutes = 0
     seconds = 0
 
-    # todo sort by period, minutes, seconds so that goals and penalties are intertwined
 
+def get_sort_stamp(period, minutes, seconds):
+    return int(str(period) + "" + str(minutes) + "" + str(seconds))
 
 
 class Goal(MatchEvent):
@@ -26,6 +28,7 @@ class Goal(MatchEvent):
         self.team_name = team_name
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
+        self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
 
     def __str__(self):
         return "Goal: {}, time = {}:{}, scorer = {}"\
@@ -42,6 +45,7 @@ class Penalty(MatchEvent):
         self.team = team
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
+        self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
         self.player, self.duration, self.reason = get_player_info(penalty)
 
     def __str__(self):

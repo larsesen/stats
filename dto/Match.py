@@ -28,6 +28,8 @@ class Match(object):
         for penalty in self.penalties:
             match_events.append(penalty)
 
+        match_events.sort(key=lambda x: x.sort_stamp)
+
         # todo find better way than type checks
         for match_event in match_events:
             if type(match_event) is MatchEvent.Goal:

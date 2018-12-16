@@ -21,4 +21,4 @@ def pretty_print_time(number):
 
 
 def get_period_number(time):
-    return time.split('-')[0]
+    return int(time.split('-')[0].strip())
