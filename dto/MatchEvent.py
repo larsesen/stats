@@ -1,3 +1,7 @@
+#!/usr/local/bin/python
+# -*- coding: utf-8 -*-
+
+
 import TimeParseUtils
 
 
@@ -22,7 +26,7 @@ class Goal(MatchEvent):
         self.scorer = scorer
         self.assist = assist
         self.partial_result = partial_result
-        self.team = team_name
+        self.team = map_team_name_to_shortname.get(team_name)
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
         self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
@@ -62,3 +66,13 @@ class Penalty(MatchEvent):
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
     return player.strip(), duration.strip(), reason.strip()
+
+
+map_team_name_to_shortname = {u'Lyn Innebandy': 'Lyn',
+                              u'BMIL Herrer 1': 'BMIL',
+                              u'Ullensaker/Kisa IL': 'Ull/Kisa',
+                              u'Grei': 'Grei',
+                              u'Lillestrøm Innebandyklubb': 'Lillestrøm',
+                              u'Ajer': 'Ajer',
+                              u'Øreåsen': 'Øreåsen',
+                              u'Vålerenga': 'Vålerenga'}
