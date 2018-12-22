@@ -1,0 +1,210 @@
+{
+  "match_info": [
+    {
+      "MatchId": 6861156,
+      "MatchNo": "1331202074",
+      "MatchDate": "2018-12-20T00:00:00",
+      "MatchDateFormatted": "20.12.2018",
+      "Time": "19:30 - 21:33",
+      "RoundId": 19,
+      "RoundName": "Runde 19",
+      "RoundUrl": "PageCalendarTeamDetail.aspx?tournamentId=383884&roundId=19",
+      "Referees": [
+        {
+          "Name": "Dommer Thomas Rustestuen",
+          "PersonId": 6174114,
+          "RefereeId": 226815,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=aitscEdrVXZ1d1I3Z2d6YXA4RGVVZz090"
+        },
+        {
+          "Name": "Dommer Sturla Hagen",
+          "PersonId": 8481327,
+          "RefereeId": 227526,
+          "WebPartUrl": "PagePersonDetail.aspx?LinkId=QUw0WjAzZWN2QVQ5NDl6SVducmpWZz090"
+        }
+      ],
+      "EndResult": "8-4",
+      "PartialResult": " 1-3, 3-0, 4-1",
+      "ResultsFormatted": "8-4 (1-3, 3-0, 4-1)",
+      "ActivityName": "Innebandy",
+      "ActivityAreaId": 215232,
+      "ActivityAreaName": "Jessheim is og flerbrukshall - Innebandy B",
+      "ActivityAreaUrl": "PageVenueActivityAreaDetail.aspx?LinkId=215232",
+      "SeasonId": 200834,
+      "TournamentId": 383884,
+      "TournamentName": "1. div. østland menn - NBF",
+      "TournamentUrl": "PageTournamentDetails.aspx?LinkId=383884&SeasonId=200834",
+      "LinkId": 6861156,
+      "HasMatchReportFile": true,
+      "MatchReportUrl": "api/v1/match/GetMatchReport?matchId=6861156",
+      "HomeTeamId": 695873,
+      "HomeTeamName": "Ull/Kisa",
+      "HomeTeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "AwayTeamId": 581680,
+      "AwayTeamName": "BMIL",
+      "AwayTeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "EventTeamInfo": "Ull/Kisa - BMIL",
+      "Public": "50"
+    }
+  ],
+  "goals": [
+    {
+      "Time": "1 - 01:04",
+      "PartialResult": "0-1",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "50. Emil Varre Sandøy",
+      "Assist": "12. Lasse Anthonisen",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 04:13",
+      "PartialResult": "0-2",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "10. Thomas Bergsmark",
+      "Assist": "60. Bendik Fürst Mustad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "1 - 10:51",
+      "PartialResult": "1-2",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "25. Fredrik Alexander Holmvik",
+      "Assist": "3. Dag Staffan Lindskog",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "1 - 11:04",
+      "PartialResult": "1-3",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "19. Michael Zlatan Sven Åsberg",
+      "Assist": "18. Aksel Tjøtta Stenvold",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "2 - 02:22",
+      "PartialResult": "2-3",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "18. Erik Marcus Bergström",
+      "Assist": "10. Bendik Bjørgaas Austad",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 02:49",
+      "PartialResult": "3-3",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "10. Bendik Bjørgaas Austad",
+      "Assist": "21. Ronnie Mikael Alfred Adolfsson",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "2 - 15:15",
+      "PartialResult": "4-3",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "10. Bendik Bjørgaas Austad",
+      "Assist": "21. Ronnie Mikael Alfred Adolfsson",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "3 - 04:07",
+      "PartialResult": "5-3",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "8. Magnus Johnsen",
+      "Assist": "18. Erik Marcus Bergström",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "3 - 10:28",
+      "PartialResult": "6-3",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "10. Bendik Bjørgaas Austad",
+      "Assist": "",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "3 - 16:06",
+      "PartialResult": "6-4",
+      "TeamName": "BMIL Herrer 1",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=581680",
+      "Scorer": "10. Thomas Bergsmark",
+      "Assist": "50. Emil Varre Sandøy",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": false
+    },
+    {
+      "Time": "3 - 16:50",
+      "PartialResult": "7-4",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "10. Bendik Bjørgaas Austad",
+      "Assist": "21. Ronnie Mikael Alfred Adolfsson",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    },
+    {
+      "Time": "3 - 18:11",
+      "PartialResult": "8-4",
+      "TeamName": "Ullensaker/Kisa IL",
+      "TeamUrl": "PageOrgDetail.aspx?LinkId=695873",
+      "Scorer": "10. Bendik Bjørgaas Austad",
+      "Assist": "21. Ronnie Mikael Alfred Adolfsson",
+      "IsPenaltyGoal": false,
+      "IsOwnGoal": false,
+      "IsHomeGoal": true
+    }
+  ],
+  "penalties": [
+    {
+      "HomeTeam": "Ull/Kisa",
+      "AwayTeam": "BMIL",
+      "Penalties": [
+        {
+          "HomeTime": "3 - 08:11",
+          "HomePenalty": "18. Erik Marcus Bergström, 2 min, Slag",
+          "AwayTime": "2 - 14:41",
+          "AwayPenalty": "36. Erik Rafael Wilhelmsson, 2 min, Hardt spill"
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 18:34",
+          "AwayPenalty": "36. Erik Rafael Wilhelmsson, 12 min, "
+        },
+        {
+          "HomeTime": "",
+          "HomePenalty": "",
+          "AwayTime": "3 - 18:34",
+          "AwayPenalty": "36. Erik Rafael Wilhelmsson, 2 min, Hardt spill"
+        }
+      ]
+    }
+  ]
+}
