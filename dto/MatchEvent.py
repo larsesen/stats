@@ -2,11 +2,11 @@ import TimeParseUtils
 
 
 class MatchEvent(object):
-    # todo team?
-    sort_stamp = 0
+    team = ""
     period = 0
     minutes = 0
     seconds = 0
+    sort_stamp = 0
 
 
 def get_sort_stamp(period, minutes, seconds):
@@ -17,26 +17,27 @@ class Goal(MatchEvent):
     scorer = ""
     assist = ""
     partial_result = ""
-    team_name = ""
-
 
     def __init__(self, scorer, assist, partial_result, team_name, time):
-        # type: (String, String, String, String, String) -> Goal
         self.scorer = scorer
         self.assist = assist
         self.partial_result = partial_result
-        self.team_name = team_name
+        self.team = team_name
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
         self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
 
     def __str__(self):
-        return "Goal: {}, time = {}:{}, scorer = {}"\
-            .format(self.partial_result, self.minutes, self.seconds, self.scorer)
+
+        separator = '|'
+        return '{text: <{width}}'.format(text='Goal', width=7) + separator + \
+               '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds) + separator, width=13) + \
+               '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator + \
+               '{text: <{width}}'.format(text="scorer = " + self.scorer, width=50) + separator + \
+               '{text: <{width}}'.format(text="partial result = " + self.partial_result, width=15)
 
 
 class Penalty(MatchEvent):
-    team = ""
     player = ""
     duration = ""
     reason = ""
@@ -49,8 +50,13 @@ class Penalty(MatchEvent):
         self.player, self.duration, self.reason = get_player_info(penalty)
 
     def __str__(self):
-        return "Penalty: team: {}, time = {}:{}, player = {}, duration = {}, reason: {}" \
-            .format(self.team, self.minutes, self.seconds, self.player, self.duration, self.reason)
+        separator = '|'
+        return '{text: <{width}}'.format(text='Penalty' + separator, width=8) + \
+               '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds), width=12) + separator + \
+               '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator +  \
+               '{text: <{width}}'.format(text="player = " + self.player, width=50) + separator +  \
+               '{text: <{width}}'.format(text="duration = " + self.duration, width=22) + separator + \
+               '{text: <{width}}'.format(text="reason = " + self.reason, width=50)
 
 
 def get_player_info(penalty):

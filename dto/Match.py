@@ -25,6 +25,7 @@ class Match(object):
     def get_printed_match_events(self):
         match_events = self.get_match_events_sorted()
         text = ""
+        text += "\nMatch events:"
         period = 0
         for match_event in match_events:
             event_period = match_event.period
@@ -33,6 +34,7 @@ class Match(object):
                 period = event_period
 
             text += match_event.__str__() + "\n"
+        text += "\nMatch end \n--------\n--------\n"
         return text
 
     def get_match_events_sorted(self):
