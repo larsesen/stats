@@ -1,7 +1,4 @@
-#!/usr/local/bin/python
-# -*- coding: utf-8 -*-
-
-
+import Constants
 import TimeParseUtils
 
 
@@ -13,20 +10,16 @@ class MatchEvent(object):
     sort_stamp = 0
 
 
-def get_sort_stamp(period, minutes, seconds):
-    return int(str(period) + "" + str(minutes) + "" + str(seconds))
-
-
 class Goal(MatchEvent):
     scorer = ""
     assist = ""
     partial_result = ""
 
     def __init__(self, scorer, assist, partial_result, team_name, time):
-        self.scorer = scorer
+        self.scorer = clean_scorer(scorer)
         self.assist = assist
         self.partial_result = partial_result
-        self.team = map_team_name_to_shortname.get(team_name)
+        self.team = Constants.map_team_name_to_shortname.get(team_name)
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
         self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
@@ -63,16 +56,18 @@ class Penalty(MatchEvent):
                '{text: <{width}}'.format(text="reason = " + self.reason, width=50)
 
 
+def get_sort_stamp(period, minutes, seconds):
+    return int(str(period) + "" + str(minutes) + "" + str(seconds))
+
+
+def clean_scorer(scorer):
+    score_line = scorer.split('.')
+    length = len(score_line)
+    if length == 1:
+        return scorer
+    return score_line[1].strip()
+
+
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
     return player.strip(), duration.strip(), reason.strip()
-
-
-map_team_name_to_shortname = {u'Lyn Innebandy': 'Lyn',
-                              u'BMIL Herrer 1': 'BMIL',
-                              u'Ullensaker/Kisa IL': 'Ull/Kisa',
-                              u'Grei': 'Grei',
-                              u'Lillestrøm Innebandyklubb': 'Lillestrøm',
-                              u'Ajer': 'Ajer',
-                              u'Øreåsen': 'Øreåsen',
-                              u'Vålerenga': 'Vålerenga'}

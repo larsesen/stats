@@ -1,6 +1,7 @@
 import MapFileToObjects
-
 import dto.Match as Match
+import dto.Season as Season
+from Constants import Teams
 
 directory = "goalFiles/"
 file_names = MapFileToObjects.get_files_from_directory(directory)
@@ -11,6 +12,6 @@ for file_name in sorted(file_names):
     match = Match.Match(match_info, goals, penalties)
     matches.append(match)
 
+season = Season.Season("BMIL", matches)
 
-for match in matches:
-    print match
+goals = Season.get_goals_grouped_by_player(season.goals_for)
