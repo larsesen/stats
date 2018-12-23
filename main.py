@@ -13,5 +13,4 @@ for file_name in sorted(file_names):
     matches.append(match)
 
 season = Season.Season("BMIL", matches)
-
-goals = Season.get_goals_grouped_by_player(season.goals_for)
+print season

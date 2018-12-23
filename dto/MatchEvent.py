@@ -16,8 +16,8 @@ class Goal(MatchEvent):
     partial_result = ""
 
     def __init__(self, scorer, assist, partial_result, team_name, time):
-        self.scorer = clean_scorer(scorer)
-        self.assist = assist
+        self.scorer = clean_player_name(scorer)
+        self.assist = clean_player_name(assist)
         self.partial_result = partial_result
         self.team = Constants.map_team_name_to_shortname.get(team_name)
         self.period = TimeParseUtils.get_period_number(time)
@@ -60,14 +60,19 @@ def get_sort_stamp(period, minutes, seconds):
     return int(str(period) + "" + str(minutes) + "" + str(seconds))
 
 
-def clean_scorer(scorer):
-    score_line = scorer.split('.')
+def clean_player_name(player_name):
+    score_line = player_name.split('.')
     length = len(score_line)
     if length == 1:
-        return scorer
+        return player_name
     return score_line[1].strip()
+
+
+def clean_player_name_penalty(player_name):
+    penalty_entry = player_name.split('.')
+    return penalty_entry[1].strip()
 
 
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
-    return player.strip(), duration.strip(), reason.strip()
+    return clean_player_name_penalty(player), duration.strip(), reason.strip()
