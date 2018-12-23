@@ -1,7 +1,6 @@
 import MapFileToObjects
 import dto.Match as Match
 import dto.Season as Season
-from Constants import Teams
 
 directory = "goalFiles/"
 file_names = MapFileToObjects.get_files_from_directory(directory)

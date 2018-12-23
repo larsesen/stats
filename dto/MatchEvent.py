@@ -4,6 +4,7 @@ import TimeParseUtils
 
 class MatchEvent(object):
     team = ""
+    player = ""
     period = 0
     minutes = 0
     seconds = 0
@@ -11,12 +12,11 @@ class MatchEvent(object):
 
 
 class Goal(MatchEvent):
-    scorer = ""
     assist = ""
     partial_result = ""
 
     def __init__(self, scorer, assist, partial_result, team_name, time):
-        self.scorer = clean_player_name(scorer)
+        self.player = clean_player_name(scorer)
         self.assist = clean_player_name(assist)
         self.partial_result = partial_result
         self.team = Constants.map_team_name_to_shortname.get(team_name)
@@ -30,12 +30,11 @@ class Goal(MatchEvent):
         return '{text: <{width}}'.format(text='Goal', width=7) + separator + \
                '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds) + separator, width=13) + \
                '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator + \
-               '{text: <{width}}'.format(text="scorer = " + self.scorer, width=50) + separator + \
+               '{text: <{width}}'.format(text="scorer = " + self.player, width=50) + separator + \
                '{text: <{width}}'.format(text="partial result = " + self.partial_result, width=15)
 
 
 class Penalty(MatchEvent):
-    player = ""
     duration = ""
     reason = ""
 

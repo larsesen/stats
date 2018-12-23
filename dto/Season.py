@@ -19,21 +19,25 @@ class Season(object):
         self.goals_for = get_goals_for(self, matches)
         self.goals_against = get_goals_against(self, matches)
         self.assists = get_assists_by_player(self.goals_for)
-        self.penalties = get_penalties_by_player(get_penalties(self, matches))
-        self.top_scorers = get_goals_grouped_by_player(self.goals_for)
+        self.penalties = get_events_grouped_by_player(get_penalties(self, matches))
+        self.top_scorers = get_events_grouped_by_player(self.goals_for)
 
     def __str__(self):
         return "Team name : {}" \
                "\nNumber of matches: {}" \
+               "\nNumber of points for team: {}" \
                "\nnumber of goals scored: {}" \
                "\nNumber of goals conceeded: {}" \
-               "\nnumber of players with penalties: {}" \
                "\nnumber of goal scorers: {}" \
+               "\nnumber of players with penalties: {}" \
                "\n\nScorers: {}" \
                "\n\nAssists: {}" \
                "\n\nPenalties: {}" \
-            .format(self.team_name, len(self.matches), len(self.goals_for), len(self.goals_against),
-                    len(self.penalties), len(self.top_scorers),
+            .format(self.team_name,
+                    len(self.matches),
+                    find_number_of_points(self, self.matches),
+                    len(self.goals_for), len(self.goals_against),
+                    len(self.top_scorers), len(self.penalties),
                     print_entries_sorted(self.top_scorers),
                     print_entries_sorted(self.assists),
                     print_entries_sorted(self.penalties))
@@ -76,18 +80,11 @@ def get_assists(self, matches):
     return assists
 
 
-def get_goals_grouped_by_player(goals):
-    scorers = []
-    for goal in goals:
-        scorers.append(goal.scorer)
-    return Counter(scorers)
-
-
-def get_penalties_by_player(penalties):
-    player_penalties = []
-    for penalty in penalties:
-        player_penalties.append(penalty.player)
-    return Counter(player_penalties)
+def get_events_grouped_by_player(list_of_events):
+    events = []
+    for goal in list_of_events:
+        events.append(goal.player)
+    return Counter(events)
 
 
 def get_assists_by_player(goals):
@@ -98,8 +95,18 @@ def get_assists_by_player(goals):
     return Counter(assists)
 
 
-def print_entries_sorted(top_scorers):
+def find_number_of_points(self, matches):
+    points = 0
+    for match in matches:
+        if match.home_team == self.team_name:
+            points += match.points_for_home
+        else:
+            points += match.points_for_away
+    return points
+
+
+def print_entries_sorted(match_events):
     s = ""
-    for key, value in sorted(top_scorers.iteritems(), key=lambda (k, v): (v, k), reverse=True):
+    for key, value in sorted(match_events.iteritems(), key=lambda (k, v): (v, k), reverse=True):
         s += '\n' + key + ": " + str(value)
     return s.encode('utf-8')
