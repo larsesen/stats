@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from collections import Counter
+from Helper import MatchResult as MatchResult
 
 
 class Season(object):
@@ -12,32 +13,45 @@ class Season(object):
     assists = []
     penalties = []
     top_scorers = []
+    match_results = []
 
     def __init__(self, team_name, matches):
         self.team_name = team_name
         self.matches = matches
         self.goals_for = get_goals_for(self, matches)
         self.goals_against = get_goals_against(self, matches)
+        self.top_scorers = get_events_grouped_by_player(self.goals_for)
         self.assists = get_assists_by_player(self.goals_for)
         self.penalties = get_events_grouped_by_player(get_penalties(self, matches))
-        self.top_scorers = get_events_grouped_by_player(self.goals_for)
+        self.match_results = get_match_results_for_team(self, matches)
 
     def __str__(self):
         return "Team name : {}" \
-               "\nNumber of matches: {}" \
-               "\nNumber of points for team: {}" \
+               "\nNumber of matches played: {}" \
+               "\nNumber of full time wins: {}" \
+               "\nNumber of penalty wins: {}" \
+               "\nNumber of penalty losses: {}" \
+               "\nNumber of full time losses: {}" \
                "\nnumber of goals scored: {}" \
-               "\nNumber of goals conceeded: {}" \
-               "\nnumber of goal scorers: {}" \
+               "\nNumber of goals conceded: {}" \
+               "\nGoal Differential: {}" \
+               "\nNumber of points for team: {}" \
+               "\n\n\nnnumber of goal scorers: {}" \
                "\nnumber of players with penalties: {}" \
                "\n\nScorers: {}" \
                "\n\nAssists: {}" \
                "\n\nPenalties: {}" \
             .format(self.team_name,
                     len(self.matches),
-                    find_number_of_points(self, self.matches),
+                    get_number_of_occurrences(self.match_results, MatchResult.WIN),
+                    get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
+                    get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
+                    get_number_of_occurrences(self.match_results, MatchResult.LOSS),
+
                     len(self.goals_for), len(self.goals_against),
+                    len(self.goals_for) - len(self.goals_against),
                     len(self.top_scorers), len(self.penalties),
+                    find_number_of_points(self.match_results),
                     print_entries_sorted(self.top_scorers),
                     print_entries_sorted(self.assists),
                     print_entries_sorted(self.penalties))
@@ -95,14 +109,45 @@ def get_assists_by_player(goals):
     return Counter(assists)
 
 
-def find_number_of_points(self, matches):
-    points = 0
+def get_opposite(result_for_home_team):
+    if result_for_home_team == MatchResult.WIN:
+        return MatchResult.LOSS
+    if result_for_home_team == MatchResult.WIN_PEN:
+        return MatchResult.LOSS_PEN
+    if result_for_home_team == MatchResult.LOSS_PEN:
+        return MatchResult.WIN_PEN
+    if result_for_home_team == MatchResult.LOSS:
+        return MatchResult.WIN
+
+
+def get_match_results_for_team(self, matches):
+    results = []
     for match in matches:
         if match.home_team == self.team_name:
-            points += match.points_for_home
+            results.append(match.result_for_home_team)
         else:
-            points += match.points_for_away
+            results.append(get_opposite(match.result_for_home_team))
+    return results
+
+
+def find_number_of_points(results):
+    points = 0
+    for result in results:
+        if result == MatchResult.WIN:
+            points += 3
+        elif result == MatchResult.WIN_PEN:
+            points += 2
+        elif result == MatchResult.LOSS_PEN:
+            points += 1
     return points
+
+
+def get_number_of_occurrences(match_results, final_result):
+    occurrences = 0
+    for result in match_results:
+        if result == final_result:
+            occurrences += 1
+    return occurrences
 
 
 def print_entries_sorted(match_events):

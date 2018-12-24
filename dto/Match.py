@@ -1,11 +1,13 @@
+from Helper import MatchResult as MatchResult
+
+
 class Match(object):
     match_info = {}
     home_team = ""
     away_team = ""
     goals = []
     penalties = []
-    points_for_home = 0
-    points_for_away = 0
+    result_for_home_team = ""
 
     def __init__(self, match_info, goals, penalties):
         self.match_info = match_info
@@ -13,7 +15,7 @@ class Match(object):
         self.away_team = match_info.away_team
         self.goals = goals
         self.penalties = penalties
-        self.points_for_home, self.points_for_away = find_points_for_teams(self.match_info)
+        self.result_for_home_team = get_result_for_home_team(match_info)
 
     def __str__(self):
         match_report = "Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}\n" \
@@ -49,7 +51,7 @@ class Match(object):
         return match_events
 
 
-def find_points_for_teams(match_info):
+def get_result_for_home_team(match_info):
     match_details = match_info.result.split(' (')
 
     away_goal, home_goal = get_goals_for_home_and_away(match_details)
@@ -57,14 +59,15 @@ def find_points_for_teams(match_info):
 
     if len(result_per_period) == 3:
         if home_goal > away_goal:
-            return 3, 0
+            return MatchResult.WIN
         elif home_goal < away_goal:
-            return 0, 3
+            return MatchResult.LOSS
+
     else:
         if home_goal > away_goal:
-            return 2, 1
+            return MatchResult.WIN_PEN
         elif home_goal < away_goal:
-            return 1, 2
+            return MatchResult.LOSS_PEN
     raise ValueError("Not possible result")
 
 
