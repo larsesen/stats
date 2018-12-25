@@ -8,6 +8,7 @@ class MatchInfo(object):
     home_team = ""
     result = ""
     result_for_home_team = ""
+    result_for_away_team = ""
 
     def __init__(self, date, arena, home_team, away_team, result):
         self.date = date
@@ -15,14 +16,14 @@ class MatchInfo(object):
         self.home_team = home_team
         self.away_team = away_team
         self.result = result
-        self.result_for_home_team = get_result_for_home_team(self)
+        self.result_for_home_team, self.result_for_away_team = get_result_for_match(self)
 
     def __str__(self):
         return "Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}"\
             .format(self.date, self.arena, self.home_team, self.away_team, self.result)
 
 
-def get_result_for_home_team(match_info):
+def get_result_for_match(match_info):
     match_details = match_info.result.split(' (')
 
     away_goal, home_goal = get_goals_for_home_and_away(match_details)
@@ -30,15 +31,15 @@ def get_result_for_home_team(match_info):
 
     if len(result_per_period) == 3:
         if home_goal > away_goal:
-            return MatchResult.WIN
+            return MatchResult.WIN, MatchResult.LOSS
         elif home_goal < away_goal:
-            return MatchResult.LOSS
+            return MatchResult.LOSS, MatchResult.WIN
 
     else:
         if home_goal > away_goal:
-            return MatchResult.WIN_PEN
+            return MatchResult.WIN_PEN, MatchResult.LOSS_PEN
         elif home_goal < away_goal:
-            return MatchResult.LOSS_PEN
+            return MatchResult.LOSS_PEN, MatchResult.WIN_PEN
     raise ValueError("Not possible result")
 
 

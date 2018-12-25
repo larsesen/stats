@@ -98,7 +98,7 @@ def get_assists(self, matches):
 def get_penalty_minutes_per_player(penalties):
     minutes_per_player = {}
     for entry in penalties:
-        if not entry.player in minutes_per_player:
+        if entry.player not in minutes_per_player:
             minutes_per_player[entry.player] = entry.duration
         else:
             minutes_per_player[entry.player] += entry.duration
@@ -120,24 +120,15 @@ def get_assists_by_player(goals):
     return Counter(assists)
 
 
-def get_opposite_match_result(result_for_home_team):
-    if result_for_home_team == MatchResult.WIN:
-        return MatchResult.LOSS
-    if result_for_home_team == MatchResult.WIN_PEN:
-        return MatchResult.LOSS_PEN
-    if result_for_home_team == MatchResult.LOSS_PEN:
-        return MatchResult.WIN_PEN
-    if result_for_home_team == MatchResult.LOSS:
-        return MatchResult.WIN
-
-
 def get_match_results_for_team(self, matches):
     results = []
     for match in matches:
         if match.home_team == self.team_name:
             results.append(match.match_info.result_for_home_team)
+        elif match.away_team == self.team_name:
+            results.append(match.match_info.result_for_away_team)
         else:
-            results.append(get_opposite_match_result(match.match_info.result_for_home_team))
+            print 'Team: "{}" did not participate in match'.format(self.team_name)
     return results
 
 
