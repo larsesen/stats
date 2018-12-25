@@ -17,13 +17,13 @@ class Season(object):
 
     def __init__(self, team_name, matches):
         self.team_name = team_name
-        self.matches = matches
-        self.goals_for = get_goals_for(self, matches)
-        self.goals_against = get_goals_against(self, matches)
+        self.matches = get_matches_for_team(team_name, matches)
+        self.goals_for = get_goals_for(self, self.matches)
+        self.goals_against = get_goals_against(self, self.matches)
         self.top_scorers = get_events_grouped_by_player(self.goals_for)
         self.assists = get_assists_by_player(self.goals_for)
-        self.penalties = get_penalty_minutes_per_player(get_penalties(self, matches))
-        self.match_results = get_match_results_for_team(self, matches)
+        self.penalties = get_penalty_minutes_per_player(get_penalties(self, self.matches))
+        self.match_results = get_match_results_for_team(self, self.matches)
 
     def __str__(self):
         return "Team name : {}" \
@@ -56,6 +56,14 @@ class Season(object):
                     print_entries_sorted(self.top_scorers),
                     print_entries_sorted(self.assists),
                     print_entries_sorted(self.penalties))
+
+
+def get_matches_for_team(team_name, matches):
+    matches_for_team = []
+    for match in matches:
+        if match.home_team == team_name or match.away_team == team_name:
+            matches_for_team.append(match)
+    return matches_for_team
 
 
 def get_penalties(self, matches):
@@ -128,7 +136,7 @@ def get_match_results_for_team(self, matches):
         elif match.away_team == self.team_name:
             results.append(match.match_info.result_for_away_team)
         else:
-            print 'Team: "{}" did not participate in match'.format(self.team_name)
+            raise ValueError('Team must be either home or away')
     return results
 
 
