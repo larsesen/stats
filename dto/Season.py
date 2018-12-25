@@ -22,7 +22,7 @@ class Season(object):
         self.goals_against = get_goals_against(self, matches)
         self.top_scorers = get_events_grouped_by_player(self.goals_for)
         self.assists = get_assists_by_player(self.goals_for)
-        self.penalties = get_events_grouped_by_player(get_penalties(self, matches))
+        self.penalties = get_penalty_minutes_per_player(get_penalties(self, matches))
         self.match_results = get_match_results_for_team(self, matches)
 
     def __str__(self):
@@ -32,26 +32,27 @@ class Season(object):
                "\nNumber of penalty wins: {}" \
                "\nNumber of penalty losses: {}" \
                "\nNumber of full time losses: {}" \
-               "\nnumber of goals scored: {}" \
+               "\nNumber of goals scored: {}" \
                "\nNumber of goals conceded: {}" \
                "\nGoal Differential: {}" \
                "\nNumber of points for team: {}" \
-               "\n\n\nnnumber of goal scorers: {}" \
-               "\nnumber of players with penalties: {}" \
+               "\n\nNumber of goal scorers: {}" \
+               "\nNumber of players with penalties: {}" \
                "\n\nScorers: {}" \
                "\n\nAssists: {}" \
-               "\n\nPenalties: {}" \
+               "\n\nPenalty minutes per player: {}" \
             .format(self.team_name,
                     len(self.matches),
                     get_number_of_occurrences(self.match_results, MatchResult.WIN),
                     get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
                     get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
                     get_number_of_occurrences(self.match_results, MatchResult.LOSS),
-
                     len(self.goals_for), len(self.goals_against),
                     len(self.goals_for) - len(self.goals_against),
-                    len(self.top_scorers), len(self.penalties),
                     find_number_of_points(self.match_results),
+
+                    len(self.top_scorers),
+                    len(self.penalties),
                     print_entries_sorted(self.top_scorers),
                     print_entries_sorted(self.assists),
                     print_entries_sorted(self.penalties))
@@ -94,6 +95,16 @@ def get_assists(self, matches):
     return assists
 
 
+def get_penalty_minutes_per_player(penalties):
+    minutes_per_player = {}
+    for entry in penalties:
+        if not entry.player in minutes_per_player:
+            minutes_per_player[entry.player] = entry.duration
+        else:
+            minutes_per_player[entry.player] += entry.duration
+    return minutes_per_player
+
+
 def get_events_grouped_by_player(list_of_events):
     events = []
     for goal in list_of_events:
@@ -109,7 +120,7 @@ def get_assists_by_player(goals):
     return Counter(assists)
 
 
-def get_opposite(result_for_home_team):
+def get_opposite_match_result(result_for_home_team):
     if result_for_home_team == MatchResult.WIN:
         return MatchResult.LOSS
     if result_for_home_team == MatchResult.WIN_PEN:
@@ -124,9 +135,9 @@ def get_match_results_for_team(self, matches):
     results = []
     for match in matches:
         if match.home_team == self.team_name:
-            results.append(match.result_for_home_team)
+            results.append(match.match_info.result_for_home_team)
         else:
-            results.append(get_opposite(match.result_for_home_team))
+            results.append(get_opposite_match_result(match.match_info.result_for_home_team))
     return results
 
 

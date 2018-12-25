@@ -74,4 +74,8 @@ def clean_player_name_penalty(player_name):
 
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
-    return clean_player_name_penalty(player), duration.strip(), reason.strip()
+    return clean_player_name_penalty(player), extract_duration_of_penalty(duration), reason.strip()
+
+
+def extract_duration_of_penalty(duration):
+    return int(duration.strip().split(' ')[0].strip())
