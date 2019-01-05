@@ -16,8 +16,8 @@ class Goal(MatchEvent):
     partial_result = ""
 
     def __init__(self, scorer, assist, partial_result, team_name, time):
-        self.player = clean_player_name(scorer)
-        self.assist = clean_player_name(assist)
+        self.player = unicode(clean_player_name(scorer)).encode('utf-8')
+        self.assist = unicode(clean_player_name(assist)).encode('utf-8')
         self.partial_result = partial_result
         self.team = Constants.map_team_name_to_shortname.get(team_name)
         self.period = TimeParseUtils.get_period_number(time)
@@ -25,7 +25,6 @@ class Goal(MatchEvent):
         self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
 
     def __str__(self):
-
         separator = '|'
         return '{text: <{width}}'.format(text='Goal', width=7) + separator + \
                '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds) + separator, width=13) + \
@@ -39,7 +38,7 @@ class Penalty(MatchEvent):
     reason = ""
 
     def __init__(self, team, time, penalty):
-        self.team = team
+        self.team = unicode(team).encode('utf-8')
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
         self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
@@ -47,12 +46,12 @@ class Penalty(MatchEvent):
 
     def __str__(self):
         separator = '|'
-        return '{text: <{width}}'.format(text='Penalty' + separator, width=8) + \
-               '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds), width=12) + separator + \
-               '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator +  \
-               '{text: <{width}}'.format(text="player = " + self.player, width=50) + separator +  \
-               '{text: <{width}}'.format(text="duration = " + self.duration, width=22) + separator + \
-               '{text: <{width}}'.format(text="reason = " + self.reason, width=50)
+        return ('{text: <{width}}'.format(text='Penalty' + separator, width=8) +
+               '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds), width=12) + separator +
+               '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator +
+               '{text: <{width}}'.format(text="player = " + self.player, width=50) + separator +
+               '{text: <{width}}'.format(text="duration = " + str(self.duration), width=22) + separator +
+               '{text: <{width}}'.format(text="reason = " + self.reason, width=50))
 
 
 def get_sort_stamp(period, minutes, seconds):
@@ -74,7 +73,8 @@ def clean_player_name_penalty(player_name):
 
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
-    return clean_player_name_penalty(player), extract_duration_of_penalty(duration), reason.strip()
+    return unicode(clean_player_name_penalty(player)).encode('utf-8'), extract_duration_of_penalty(duration), \
+           unicode(reason.strip()).encode('utf-8')
 
 
 def extract_duration_of_penalty(duration):

@@ -79,6 +79,6 @@ def get_data_from_file(path):
     return match_info, goals, penalties
 
 
-match_info, goals, penalties = get_data_from_file('../test.json')
+match_info, goals, penalties = get_data_from_file('match_reports/2018-09-23_Lil_Lyn.json')
 match = Match.Match(match_info, goals, penalties)
 print match

@@ -13,10 +13,11 @@ class Match(object):
         self.penalties = penalties
 
     def __str__(self):
-        match_report = "Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}\n" \
-            .format(self.match_info.date, self.match_info.arena, self.home_team, self.away_team,
-                    self.match_info.result)
+        match_report = u"Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}\n" \
+            .format(self.match_info.date, self.match_info.arena, self.home_team,
+                    self.away_team, self.match_info.result)
 
+        match_report = unicode(match_report).encode('utf-8')
         match_report += self.get_printed_match_events()
         return match_report
 
