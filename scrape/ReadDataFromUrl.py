@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import MapFileToObjects
+#### Deprecated
+
 import dto.Match as Match
 from ReadFile import read_json_data
 import dto.MatchEvent as MatchEvent

@@ -22,7 +22,7 @@ class Goal(MatchEvent):
         self.team = Constants.map_team_name_to_shortname.get(team_name)
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
-        self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
+        self.sort_stamp = get_sort_stamp(self.minutes, self.seconds)
 
     def __str__(self):
         separator = '|'
@@ -41,7 +41,7 @@ class Penalty(MatchEvent):
         self.team = unicode(team).encode('utf-8')
         self.period = TimeParseUtils.get_period_number(time)
         self.minutes, self.seconds = TimeParseUtils.get_time_in_minutes_and_seconds(time)
-        self.sort_stamp = get_sort_stamp(self.period, self.minutes, self.seconds)
+        self.sort_stamp = get_sort_stamp(self.minutes, self.seconds)
         self.player, self.duration, self.reason = get_player_info(penalty)
 
     def __str__(self):
@@ -54,8 +54,8 @@ class Penalty(MatchEvent):
                '{text: <{width}}'.format(text="reason = " + self.reason, width=50))
 
 
-def get_sort_stamp(period, minutes, seconds):
-    return int(str(period) + "" + str(minutes) + "" + str(seconds))
+def get_sort_stamp(minutes, seconds):
+    return int(minutes) * 60 + int(seconds)
 
 
 def clean_player_name(player_name):
