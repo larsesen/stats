@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-#Insert new id's to get data from match.
 
 import json
 from bs4 import BeautifulSoup
@@ -33,6 +32,6 @@ for match_id in match_ids:
     home = json_string['info'][0]['HomeTeamName'][:3]
     away = json_string['info'][0]['AwayTeamName'][:3]
 
-    file_name = 'match_reports/' + timestamp + '_' + home + '_' + away + '.json'
+    file_name = '../match_reports/' + timestamp + '_' + home + '_' + away + '.json'
     with open(file_name, 'w') as file:
         file.write(json.dumps(json_string, ensure_ascii=False).encode('utf-8'))
