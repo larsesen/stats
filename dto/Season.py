@@ -60,47 +60,25 @@ class Season(object):
     #                 print_entries_sorted(self.penalties))
 
     def __str__(self):
-        # return "{}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #        "\t {}" \
-        #     .format(self.team_name,
-        #             len(self.matches),
-        #             get_number_of_occurrences(self.match_results, MatchResult.WIN),
-        #             get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
-        #             get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
-        #             get_number_of_occurrences(self.match_results, MatchResult.LOSS),
-        #             len(self.goals_for), len(self.goals_against),
-        #             len(self.goals_for) - len(self.goals_against),
-        #             find_number_of_points(self.match_results))
-        return '{text: <{width}}'.format(text = self.team_name, width=16) + \
-               '{text: <{width}}'.format(text = len(self.matches), width=10) + \
-                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN), width=10) + \
-                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN), width=10) + \
-                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN), width=10) + \
-                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS), width=10) + \
-                '{text: <{width}}'.format(text=len(self.goals_for), width=10) + \
-                '{text: <{width}}'.format(text=len(self.goals_against), width=10) + \
-                '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=10) + \
-                '{text: <{width}}'.format(text=self.points, width=10)
-            # def __str__(self):
-    #     separator = '|'
-    #     return '{text: <{width}}'.format(text='Goal', width=7) + separator + \
-    #            '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds) + separator, width=13) + \
-    #            '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator + \
-    #            '{text: <{width}}'.format(text="scorer = " + self.player, width=50) + separator + \
-    #            '{text: <{width}}'.format(text="partial result = " + self.partial_result, width=15)
+        return '{text: <{width}}'.format(text=self.team_name, width=15) + \
+               '{text: <{width}}'.format(text=len(self.matches), width=3) + \
+               '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN), width=3) + \
+               '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
+                                         width=3) + \
+               '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
+                                         width=3) + \
+               '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS),
+                                         width=3) + \
+               '{text: <{width}}'.format(text=str(len(self.goals_for)) + '-' + str(len(self.goals_against)), width=6) + \
+               '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=4) + \
+               '{text: <{width}}'.format(text=self.points, width=4)
+
 
 def get_matches_for_team(team_name, matches):
     matches_for_team = []
     for match in matches:
-        if unicode(match.home_team).encode('utf-8') == team_name or unicode(match.away_team).encode('utf-8')== team_name:
+        if unicode(match.home_team).encode('utf-8') == team_name or unicode(match.away_team).encode(
+                'utf-8') == team_name:
             matches_for_team.append(match)
     return matches_for_team
 

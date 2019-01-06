@@ -93,12 +93,10 @@ for file_name in sorted(file_names):
 team_names = ['Lyn','BMIL','Ull/Kisa','Grei','Lillestrøm','Ajer','Øreåsen','Vålerenga']
 season_stats_for_team = []
 for team_name in team_names:
-
     season = Season.Season(team_name, matches)
     season_stats_for_team.append(season)
 
-#season = Season.Season('Vålerenga', matches)
-print 'Team \t K \t S \t US \t UT \t T \t Goals \t +- \t P \n'
+print 'Team \t\t  K  S  US UT T  Goals  +-  P \n'
 for season in sorted(season_stats_for_team, key=lambda x: x.points, reverse=True):
     print season
 
