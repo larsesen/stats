@@ -14,6 +14,7 @@ class Season(object):
     penalties = []
     top_scorers = []
     match_results = []
+    points = 0
 
     def __init__(self, team_name, matches):
         self.team_name = team_name
@@ -24,44 +25,82 @@ class Season(object):
         self.assists = get_assists_by_player(self.goals_for)
         self.penalties = get_penalty_minutes_per_player(get_penalties(self, self.matches))
         self.match_results = get_match_results_for_team(self, self.matches)
+        self.points = find_number_of_points(self.match_results)
+
+    # def __str__(self):
+    #     return "Team name : {}" \
+    #            "\nNumber of matches played: {}" \
+    #            "\nNumber of full time wins: {}" \
+    #            "\nNumber of penalty wins: {}" \
+    #            "\nNumber of penalty losses: {}" \
+    #            "\nNumber of full time losses: {}" \
+    #            "\nNumber of goals scored: {}" \
+    #            "\nNumber of goals conceded: {}" \
+    #            "\nGoal Differential: {}" \
+    #            "\nNumber of points for team: {}" \
+    #            "\n\nNumber of goal scorers: {}" \
+    #            "\nNumber of players with penalties: {}" \
+    #            "\n\nScorers: {}" \
+    #            "\n\nAssists: {}" \
+    #            "\n\nPenalty minutes per player: {}" \
+    #         .format(self.team_name,
+    #                 len(self.matches),
+    #                 get_number_of_occurrences(self.match_results, MatchResult.WIN),
+    #                 get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
+    #                 get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
+    #                 get_number_of_occurrences(self.match_results, MatchResult.LOSS),
+    #                 len(self.goals_for), len(self.goals_against),
+    #                 len(self.goals_for) - len(self.goals_against),
+    #                 find_number_of_points(self.match_results),
+    #
+    #                 len(self.top_scorers),
+    #                 len(self.penalties),
+    #                 print_entries_sorted(self.top_scorers),
+    #                 print_entries_sorted(self.assists),
+    #                 print_entries_sorted(self.penalties))
 
     def __str__(self):
-        return "Team name : {}" \
-               "\nNumber of matches played: {}" \
-               "\nNumber of full time wins: {}" \
-               "\nNumber of penalty wins: {}" \
-               "\nNumber of penalty losses: {}" \
-               "\nNumber of full time losses: {}" \
-               "\nNumber of goals scored: {}" \
-               "\nNumber of goals conceded: {}" \
-               "\nGoal Differential: {}" \
-               "\nNumber of points for team: {}" \
-               "\n\nNumber of goal scorers: {}" \
-               "\nNumber of players with penalties: {}" \
-               "\n\nScorers: {}" \
-               "\n\nAssists: {}" \
-               "\n\nPenalty minutes per player: {}" \
-            .format(self.team_name,
-                    len(self.matches),
-                    get_number_of_occurrences(self.match_results, MatchResult.WIN),
-                    get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
-                    get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
-                    get_number_of_occurrences(self.match_results, MatchResult.LOSS),
-                    len(self.goals_for), len(self.goals_against),
-                    len(self.goals_for) - len(self.goals_against),
-                    find_number_of_points(self.match_results),
-
-                    len(self.top_scorers),
-                    len(self.penalties),
-                    print_entries_sorted(self.top_scorers),
-                    print_entries_sorted(self.assists),
-                    print_entries_sorted(self.penalties))
-
+        # return "{}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #        "\t {}" \
+        #     .format(self.team_name,
+        #             len(self.matches),
+        #             get_number_of_occurrences(self.match_results, MatchResult.WIN),
+        #             get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN),
+        #             get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN),
+        #             get_number_of_occurrences(self.match_results, MatchResult.LOSS),
+        #             len(self.goals_for), len(self.goals_against),
+        #             len(self.goals_for) - len(self.goals_against),
+        #             find_number_of_points(self.match_results))
+        return '{text: <{width}}'.format(text = self.team_name, width=16) + \
+               '{text: <{width}}'.format(text = len(self.matches), width=10) + \
+                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN), width=10) + \
+                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.WIN_PEN), width=10) + \
+                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS_PEN), width=10) + \
+                '{text: <{width}}'.format(text=get_number_of_occurrences(self.match_results, MatchResult.LOSS), width=10) + \
+                '{text: <{width}}'.format(text=len(self.goals_for), width=10) + \
+                '{text: <{width}}'.format(text=len(self.goals_against), width=10) + \
+                '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=10) + \
+                '{text: <{width}}'.format(text=self.points, width=10)
+            # def __str__(self):
+    #     separator = '|'
+    #     return '{text: <{width}}'.format(text='Goal', width=7) + separator + \
+    #            '{text: <{width}}'.format(text="time = " + str(self.minutes) + ":" + str(self.seconds) + separator, width=13) + \
+    #            '{text: <{width}}'.format(text="team = " + self.team, width=33) + separator + \
+    #            '{text: <{width}}'.format(text="scorer = " + self.player, width=50) + separator + \
+    #            '{text: <{width}}'.format(text="partial result = " + self.partial_result, width=15)
 
 def get_matches_for_team(team_name, matches):
     matches_for_team = []
     for match in matches:
-        if match.home_team == team_name or match.away_team == team_name:
+        if unicode(match.home_team).encode('utf-8') == team_name or unicode(match.away_team).encode('utf-8')== team_name:
             matches_for_team.append(match)
     return matches_for_team
 
@@ -131,9 +170,9 @@ def get_assists_by_player(goals):
 def get_match_results_for_team(self, matches):
     results = []
     for match in matches:
-        if match.home_team == self.team_name:
+        if unicode(match.home_team).encode('utf-8') == self.team_name:
             results.append(match.match_info.result_for_home_team)
-        elif match.away_team == self.team_name:
+        elif unicode(match.away_team).encode('utf-8') == self.team_name:
             results.append(match.match_info.result_for_away_team)
         else:
             raise ValueError('Team must be either home or away')
@@ -164,4 +203,4 @@ def print_entries_sorted(match_events):
     s = ""
     for key, value in sorted(match_events.iteritems(), key=lambda (k, v): (v, k), reverse=True):
         s += '\n' + key + ": " + str(value)
-    return s.encode('utf-8')
+    return s

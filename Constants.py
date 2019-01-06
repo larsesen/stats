@@ -5,6 +5,7 @@ from enum import Enum
 
 
 class Teams(Enum):
+    LYN = 'Lyn'
     BMIL = 'BMIL',
     UllKisa = 'Ull/Kisa',
     Grei = 'Grei',

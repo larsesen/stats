@@ -25,7 +25,7 @@ def get_data_from_file(path):
 
 
 def extract_match_info(all_data):
-    info = all_data['match_info'][0]
+    info = all_data['info'][0]
     match_date = info[MatchObject.MatchDate]
     arena = info[MatchObject.Arena]
     home_team = info[MatchObject.HomeTeam]
@@ -37,27 +37,27 @@ def extract_match_info(all_data):
 
 def extract_goals(all_data):
     goals = []
-    for goal in all_data['goals']:
+    for entry in all_data['goals']:
+        for goal in entry['goalsInOrder']:
+            scorer = goal[GoalObject.Scorer]
+            assist = goal[GoalObject.Assist]
+            partial_result = goal[GoalObject.PartialResult]
+            team_name = goal[GoalObject.TeamName]
+            time = goal[GoalObject.Time]
 
-        scorer = goal[GoalObject.Scorer]
-        assist = goal[GoalObject.Assist]
-        partial_result = goal[GoalObject.PartialResult]
-        team_name = goal[GoalObject.TeamName]
-        time = goal[GoalObject.Time]
+            if time == 'Str':
+                scorer = "Penalty shootout"
+                time = "3 - 20:00"
 
-        if time == 'Str':
-            scorer = "Penalty shootout"
-            time = "3 - 20:00"
-
-        current = MatchEvent.Goal(scorer, assist, partial_result, team_name, time)
-        goals.append(current)
+            current = MatchEvent.Goal(scorer, assist, partial_result, team_name, time)
+            goals.append(current)
     return goals
 
 
 def extract_penalties(all_data):
     all_penalties = []
 
-    for penalty in all_data['penalties']:
+    for penalty in all_data['pens']:
 
         home_team = penalty[PenaltyObject.HomeTeam]
         away_team = penalty[PenaltyObject.AwayTeam]
@@ -68,6 +68,10 @@ def extract_penalties(all_data):
             home_penalty = match_penalty[PenaltyObject.HomePenalty]
             away_time = match_penalty[PenaltyObject.AwayTime]
             away_penalty = match_penalty[PenaltyObject.AwayPenalty]
+
+            #tempfix for error in match penalty in 20181202_vif_ull which does not have a player name
+            if '.' not in home_penalty or '.' not in away_penalty:
+                continue
 
             if home_time != "":
                 current = MatchEvent.Penalty(home_team, home_time, home_penalty)

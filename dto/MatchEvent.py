@@ -68,12 +68,12 @@ def clean_player_name(player_name):
 
 def clean_player_name_penalty(player_name):
     penalty_entry = player_name.split('.')
-    return penalty_entry[1].strip()
+    return unicode(penalty_entry[1].strip()).encode('utf-8')
 
 
 def get_player_info(penalty):
     player, duration, reason = penalty.split(',')
-    return unicode(clean_player_name_penalty(player)).encode('utf-8'), extract_duration_of_penalty(duration), \
+    return clean_player_name_penalty(player), extract_duration_of_penalty(duration), \
            unicode(reason.strip()).encode('utf-8')
 
 

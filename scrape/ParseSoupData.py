@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # todo Make this class read from all files in match_reports
-
+import MapFileToObjects
 from ReadFile import read_json_data
 
 
@@ -13,6 +13,7 @@ import dto.MatchInfo as Info
 from JsonObjectNames import GoalObject as GoalObject
 from JsonObjectNames import MatchInfoObject as MatchObject
 from JsonObjectNames import PenaltyObject as PenaltyObject
+from dto import Season
 
 
 def extract_match_info(all_data):
@@ -79,6 +80,26 @@ def get_data_from_file(path):
     return match_info, goals, penalties
 
 
-match_info, goals, penalties = get_data_from_file('match_reports/2018-09-23_Lil_Lyn.json')
-match = Match.Match(match_info, goals, penalties)
-print match
+directory = "match_reports/"
+file_names = MapFileToObjects.get_files_from_directory(directory)
+
+matches = []
+for file_name in sorted(file_names):
+    match_info, goals, penalties = MapFileToObjects.get_data_from_file(directory + file_name)
+    match = Match.Match(match_info, goals, penalties)
+    matches.append(match)
+
+
+team_names = ['Lyn','BMIL','Ull/Kisa','Grei','Lillestrøm','Ajer','Øreåsen','Vålerenga']
+season_stats_for_team = []
+for team_name in team_names:
+
+    season = Season.Season(team_name, matches)
+    season_stats_for_team.append(season)
+
+#season = Season.Season('Vålerenga', matches)
+print 'Team \t K \t S \t US \t UT \t T \t Goals \t +- \t P \n'
+for season in sorted(season_stats_for_team, key=lambda x: x.points, reverse=True):
+    print season
+
+
