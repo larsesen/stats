@@ -8,8 +8,8 @@ from dto import Match, Season
 def get_all_matches(directory, file_names):
     matches = []
     for file_name in sorted(file_names):
-        match_info, goals, penalties = MapFileToObjects.get_data_from_file(directory + file_name)
-        match = Match.Match(match_info, goals, penalties)
+        match_info, goals, penalties, home_players, away_players = MapFileToObjects.get_data_from_file(directory + file_name)
+        match = Match.Match(match_info, goals, penalties, home_players, away_players)
         matches.append(match)
     return matches
 

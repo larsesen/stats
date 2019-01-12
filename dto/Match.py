@@ -4,13 +4,17 @@ class Match(object):
     away_team = ""
     goals = []
     penalties = []
+    home_players = []
+    away_players = []
 
-    def __init__(self, match_info, goals, penalties):
+    def __init__(self, match_info, goals, penalties, home_players, away_players):
         self.match_info = match_info
         self.home_team = match_info.home_team
         self.away_team = match_info.away_team
         self.goals = goals
         self.penalties = penalties
+        self.home_players = home_players
+        self.away_players = away_players
 
     def __str__(self):
         match_report = u"Date: {}\nArena: {}\nHome team: {}\nAway team: {}\nResult: {}\n" \
