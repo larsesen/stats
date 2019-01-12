@@ -3,6 +3,8 @@
 
 
 import json
+import os
+
 from bs4 import BeautifulSoup
 import requests
 
@@ -12,7 +14,8 @@ match_ids = ['6861083','6861084','6861085','6861086','6861087','6861088','686108
             '6861093','6861094','6861095','6861096','6861097','6861098','6861099','6861100','6861101','6861102',
             '6861103','6861104','6861105','6861106','6861107','6861108','6861109','6861110','6861111','6861112',
             '6861113','6861114','6861115','6861116','6861117','6861118','6861119','6861120','6861121','6861122',
-            '6861123','6861124','6861125','6861126','6861127','6861129','6861130','6861156']
+            '6861123','6861124','6861125','6861126','6861127','6861129','6861130','6861156', '6861132', '6861134',
+             '6861133', '6861136', '6861137']
 
 for match_id in match_ids:
 
@@ -33,5 +36,9 @@ for match_id in match_ids:
     away = json_string['info'][0]['AwayTeamName'][:3]
 
     file_name = '../match_reports/' + timestamp + '_' + home + '_' + away + '.json'
-    with open(file_name, 'w') as file:
-        file.write(json.dumps(json_string, ensure_ascii=False).encode('utf-8'))
+
+    if os.path.isfile(file_name):
+        print 'file already exists - ignoring file', file_name
+    else:
+        with open(file_name, 'w') as file:
+            file.write(json.dumps(json_string, ensure_ascii=False).encode('utf-8'))
