@@ -3,7 +3,7 @@
 
 import MapFileToObjects
 from dto import Match, Season
-
+from dto.Helper import MatchResult
 
 def get_all_matches(directory, file_names):
     matches = []
@@ -46,3 +46,56 @@ def get_timestamps_within_period(timestamps):
             timestamp = 1200
         timestamps_within_period.append(timestamp)
     return timestamps_within_period
+
+
+def get_matches_for_team(matches, team_name):
+    matches_for_team = []
+    for match in matches:
+        if match.home_team == team_name or match.away_team == team_name:
+            matches_for_team.append(match)
+    return matches_for_team
+
+
+def get_points_per_game_for_player(matches_for_team, name):
+    point_list = []
+    for m in matches_for_team:
+        point = 0
+        if m.home_team == 'BMIL':
+            for player in m.home_players:
+                if player.name == name:
+                    point = player.points
+            point_list.append(point)
+        elif m.away_team == 'BMIL':
+            for player in m.away_players:
+                if player.name == name:
+                    point = player.points
+                    break
+            point_list.append(point)
+    return point_list
+
+
+def get_match_results_as_points(matches_for_team, team_name):
+    results = get_match_results(matches_for_team, team_name)
+    points = []
+    for result in results:
+        if result == MatchResult.WIN:
+            points.append(3)
+        elif result == MatchResult.WIN_PEN:
+            points.append(2)
+        elif result == MatchResult.LOSS_PEN:
+            points.append(1)
+        elif result == MatchResult.LOSS:
+            points.append(0)
+        else:
+            raise ValueError('Could not find points for match result')
+    return points
+
+
+def get_match_results(matches_for_team, team_name):
+    match_results = []
+    for match in matches_for_team:
+        if match.home_team == team_name:
+            match_results.append(match.match_info.result_for_home_team)
+        elif match.away_team == team_name:
+            match_results.append(match.match_info.result_for_away_team)
+    return match_results
