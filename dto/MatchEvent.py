@@ -63,7 +63,12 @@ def clean_player_name(player_name):
     length = len(score_line)
     if length == 1:
         return player_name
-    return score_line[1].strip()
+
+    name = score_line[1].strip()
+
+    if '(Straffeslag)' in name:
+        return name.split('(Straffeslag)')[0].strip()
+    return name
 
 
 def clean_player_name_penalty(player_name):
