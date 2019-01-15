@@ -13,7 +13,7 @@ def print_team_statistics(season):
     print print_entries_sorted(season.assists)
     print '\n------------------\n'
     print 'Penalties:'
-    print print_entries_sorted(season.penalties)
+    print print_entries_sorted(season.penalties_per_player)
 
 
 def print_entries_sorted(match_events):

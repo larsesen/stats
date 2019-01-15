@@ -12,6 +12,7 @@ class Season(object):
     goals_against = []
     assists = []
     penalties = []
+    penalties_per_player = []
     top_scorers = []
     match_results = []
     points = 0
@@ -23,10 +24,10 @@ class Season(object):
         self.goals_against = get_goals_against(self, self.matches)
         self.top_scorers = get_events_grouped_by_player(self.goals_for)
         self.assists = get_assists_by_player(self.goals_for)
-        self.penalties = get_penalty_minutes_per_player(get_penalties(self, self.matches))
+        self.penalties = get_penalties(self, self.matches)
+        self.penalties_per_player = get_penalty_minutes_per_player(get_penalties(self, self.matches))
         self.match_results = get_match_results_for_team(self, self.matches)
         self.points = find_number_of_points(self.match_results)
-
 
     def __str__(self):
         return '{text: <{width}}'.format(text=self.team_name, width=15) + \
