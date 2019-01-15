@@ -5,6 +5,7 @@ import MapFileToObjects
 from dto import Match, Season
 from dto.Helper import MatchResult
 
+
 def get_all_matches(directory, file_names):
     matches = []
     for file_name in sorted(file_names):
@@ -57,7 +58,7 @@ def get_matches_for_team(matches, team_name):
 
 
 def get_points_per_game_for_player(matches_for_team, name):
-    point_list = []
+    point_list = [0] # removes off-by-one error in graph
     for m in matches_for_team:
         point = 0
         if m.home_team == 'BMIL':
