@@ -17,6 +17,4 @@ data_for_season = Stats.get_all_season_data(matches)
 timestamp_for_goals = Stats.get_timestamp_for_goals(data_for_season)
 timestamp_for_penalties = Stats.get_timestamp_for_penalties(data_for_season)
 
-# todo Something is wrong with reading penalties. Some confusion between penalty objects and just player names
-# see what happens with 2018-12-20_Ull_BMI.json and the 12 min.
-# also one or two other off-by-ones in the penalty list
+# todo Plot timestamps in graph. Both in match, and modulo'ed down to periodeach.
