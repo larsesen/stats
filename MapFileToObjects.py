@@ -91,15 +91,16 @@ def extract_penalties(all_data):
             away_time = match_penalty[PenaltyObject.AwayTime]
             away_penalty = match_penalty[PenaltyObject.AwayPenalty]
 
-            # tempfix for error in match penalty in 20181202_vif_ull which does not have a player name
-            if '.' not in home_penalty or '.' not in away_penalty:
-                continue
-
+            # fix for error in match penalty in 20181202_vif_ull which does not have a player name
             if home_time != "":
+                if '.' not in home_penalty:
+                    continue
                 current = MatchEvent.Penalty(home_team, home_time, home_penalty)
                 all_penalties.append(current)
 
             if away_time != "":
+                if '.' not in away_penalty:
+                    continue
                 current = MatchEvent.Penalty(away_team, away_time, away_penalty)
                 all_penalties.append(current)
 
