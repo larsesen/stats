@@ -20,4 +20,4 @@ def print_entries_sorted(match_events):
     s = ""
     for key, value in sorted(match_events.iteritems(), key=lambda (k, v): (v, k), reverse=True):
         s += '\n' + key + ": " + str(value)
-    return s
+    print s

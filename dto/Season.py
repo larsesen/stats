@@ -4,7 +4,8 @@
 from collections import Counter
 from Helper import MatchResult as MatchResult
 
-
+# todo This class should be much easier. Does not need a field for points, should be calculated by a method
+# todo Add field players. Can be a map where key = name and value = matches played
 class Season(object):
     team_name = ""
     matches = []
@@ -12,8 +13,6 @@ class Season(object):
     goals_against = []
     assists = []
     penalties = []
-    penalties_per_player = []
-    top_scorers = []
     match_results = []
     points = 0
 
@@ -22,10 +21,8 @@ class Season(object):
         self.matches = get_matches_for_team(team_name, matches)
         self.goals_for = get_goals_for(self, self.matches)
         self.goals_against = get_goals_against(self, self.matches)
-        self.top_scorers = get_events_grouped_by_player(self.goals_for)
-        self.assists = get_assists_by_player(self.goals_for)
+        self.assists = get_assists(self, self.matches)
         self.penalties = get_penalties(self, self.matches)
-        self.penalties_per_player = get_penalty_minutes_per_player(get_penalties(self, self.matches))
         self.match_results = get_match_results_for_team(self, self.matches)
         self.points = find_number_of_points(self.match_results)
 
@@ -42,6 +39,24 @@ class Season(object):
                '{text: <{width}}'.format(text=str(len(self.goals_for)) + '-' + str(len(self.goals_against)), width=6) + \
                '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=4) + \
                '{text: <{width}}'.format(text=self.points, width=4)
+
+    def get_goals_grouped_by_player(self):
+        events = []
+        for event in self.goals_for:
+            events.append(event.player)
+        return Counter(events)
+
+    def get_assists_by_player(self):
+        return Counter(self.assists)
+
+    def get_penalty_minutes_per_player(self):
+        minutes_per_player = {}
+        for entry in self.penalties:
+            if entry.player not in minutes_per_player:
+                minutes_per_player[entry.player] = entry.duration
+            else:
+                minutes_per_player[entry.player] += entry.duration
+        return minutes_per_player
 
 
 def get_matches_for_team(team_name, matches):
@@ -88,31 +103,6 @@ def get_assists(self, matches):
             if goal.team == self.team_name and goal.assist != "":
                 assists.append(goal.assist)
     return assists
-
-
-def get_penalty_minutes_per_player(penalties):
-    minutes_per_player = {}
-    for entry in penalties:
-        if entry.player not in minutes_per_player:
-            minutes_per_player[entry.player] = entry.duration
-        else:
-            minutes_per_player[entry.player] += entry.duration
-    return minutes_per_player
-
-
-def get_events_grouped_by_player(list_of_events):
-    events = []
-    for goal in list_of_events:
-        events.append(goal.player)
-    return Counter(events)
-
-
-def get_assists_by_player(goals):
-    assists = []
-    for goal in goals:
-        if goal.assist != "":
-            assists.append(goal.assist)
-    return Counter(assists)
 
 
 def get_match_results_for_team(self, matches):

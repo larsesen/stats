@@ -5,6 +5,7 @@ import MapFileToObjects
 import ExtractStatistics as Stats
 import PlotHelper as Plotter
 import dto.Season as Season
+import PrettyPrint
 
 directory = "../match_reports/"
 file_names = MapFileToObjects.get_files_from_directory(directory)
@@ -12,7 +13,19 @@ file_names = MapFileToObjects.get_files_from_directory(directory)
 
 matches = Stats.get_all_matches(directory, file_names)
 season = Season.Season("BMIL", matches)
-print season
+
+print 'Top scorers:'
+PrettyPrint.print_entries_sorted(season.get_goals_grouped_by_player())
+
+print '\n'
+print 'Assists:'
+PrettyPrint.print_entries_sorted(season.get_assists_by_player())
+
+print '\n'
+print 'Penalties:'
+PrettyPrint.print_entries_sorted(season.get_penalty_minutes_per_player())
+
+
 
 #data_for_season = Stats.get_all_season_data(matches)
 
