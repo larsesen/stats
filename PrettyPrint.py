@@ -7,13 +7,13 @@ def print_league_table(data_for_season):
 
 def print_team_statistics(season):
     print 'Top scorers:'
-    print print_entries_sorted(season.top_scorers)
+    print print_entries_sorted(season.get_goals_grouped_by_player())
     print '\n------------------\n'
     print 'Assists:'
-    print print_entries_sorted(season.assists)
+    print print_entries_sorted(season.get_assists_by_player())
     print '\n------------------\n'
     print 'Penalties:'
-    print print_entries_sorted(season.penalties_per_player)
+    print print_entries_sorted(season.get_penalty_minutes_per_player())
 
 
 def print_entries_sorted(match_events):
