@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from collections import Counter
-from Helper import MatchResult as MatchResult
+from Constants import MatchResult as MatchResult
 from collections import defaultdict
 
 

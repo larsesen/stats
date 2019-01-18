@@ -3,7 +3,7 @@
 
 import MapFileToObjects
 from dto import Match, Season
-from dto.Helper import MatchResult
+from dto.Constants import MatchResult
 
 
 def get_all_matches(directory, file_names):

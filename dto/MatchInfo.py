@@ -1,4 +1,4 @@
-from Helper import MatchResult as MatchResult
+from Constants import MatchResult as MatchResult
 
 
 class MatchInfo(object):
