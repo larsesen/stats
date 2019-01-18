@@ -14,6 +14,9 @@ def print_team_statistics(season):
     print '\n------------------\n'
     print 'Penalties:'
     print print_entries_sorted(season.get_penalty_minutes_per_player())
+    print '\n------------------\n'
+    print 'Players and appearances:'
+    print print_entries_sorted(season.get_players_and_number_of_matches_played())
 
 
 def print_entries_sorted(match_events):

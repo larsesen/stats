@@ -33,7 +33,7 @@ def extract_players(all_data):
 def find_player_info(player):
     player = PiM.PlayerInMatch(player[PlayerObject.Name], player[PlayerObject.ShirtNo], player[PlayerObject.IsCaptain],
                                player[PlayerObject.Goals], player[PlayerObject.Assists], player[PlayerObject.Points],
-                               player[PlayerObject.Penalties])
+                               player[PlayerObject.Penalties], player[PlayerObject.SquadIndividualCategoryId] == 1)
     return player
 
 

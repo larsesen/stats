@@ -3,6 +3,7 @@
 
 from collections import Counter
 from Helper import MatchResult as MatchResult
+from collections import defaultdict
 
 
 class Season(object):
@@ -78,6 +79,22 @@ class Season(object):
             else:
                 raise ValueError('Team must be either home or away')
         return results
+
+    def get_players_and_number_of_matches_played(self):
+        player_and_occurrences = defaultdict(int)
+        for match in self.matches:
+            players = []
+            if unicode(match.home_team).encode('utf-8') == self.team_name:
+                players.append(match.home_players)
+            elif unicode(match.away_team).encode('utf-8') == self.team_name:
+                players.append(match.away_players)
+            else:
+                raise ValueError('Team must be either home or away')
+
+            for player in players[0]:
+                if player.actually_played_match:
+                    player_and_occurrences[player.name] += 1
+        return player_and_occurrences
 
 
 def get_matches_for_team(team_name, matches):

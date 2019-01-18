@@ -42,3 +42,4 @@ class PlayerObject(Enum):
     Assists = "Assists"
     Points = "Points"
     Penalties = "Penalties"
+    SquadIndividualCategoryId = "SquadIndividualCategoryId"
