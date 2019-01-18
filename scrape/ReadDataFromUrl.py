@@ -3,10 +3,10 @@
 
 #### Deprecated
 
-import dto.Match as Match
+import objects.Match as Match
 from ReadFile import read_json_data
-import dto.MatchEvent as MatchEvent
-import dto.MatchInfo as Info
+import objects.MatchEvent as MatchEvent
+import objects.MatchInfo as Info
 
 from JsonObjectNames import GoalObject as GoalObject
 from JsonObjectNames import MatchInfoObject as MatchObject

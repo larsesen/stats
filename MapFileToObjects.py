@@ -1,7 +1,7 @@
 from ReadFile import read_json_data
-import dto.MatchEvent as MatchEvent
-import dto.MatchInfo as Info
-import dto.PlayerInMatch as PiM
+import objects.MatchEvent as MatchEvent
+import objects.MatchInfo as Info
+import objects.PlayerInMatch as PiM
 
 from os import listdir
 from os.path import isfile, join

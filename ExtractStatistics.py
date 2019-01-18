@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import MapFileToObjects
-from dto import Match, Season
-from dto.Constants import MatchResult
+from objects import Match, Season
+from objects.Constants import MatchResult
 
 
 def get_all_matches(directory, file_names):

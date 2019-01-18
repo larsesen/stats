@@ -3,7 +3,7 @@
 
 import MapFileToObjects
 import ExtractStatistics as Stats
-import dto.Season as Season
+import objects.Season as Season
 import PrettyPrint as Print
 
 

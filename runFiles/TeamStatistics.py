@@ -4,7 +4,7 @@
 import MapFileToObjects
 import ExtractStatistics as Stats
 import PlotHelper as Plotter
-import dto.Season as Season
+import objects.Season as Season
 
 
 directory = "../match_reports/"
