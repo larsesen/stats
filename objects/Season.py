@@ -23,7 +23,7 @@ class Season(object):
         self.penalties = get_penalties(self, self.matches)
 
     def __str__(self):
-        return '{text: <{width}}'.format(text=self.team_name, width=15) + \
+        return '{text: <{width}}'.format(text=self.team_name, width=13) + \
                '{text: <{width}}'.format(text=len(self.matches), width=3) + \
                '{text: <{width}}'.format(
                    text=get_number_of_occurrences(self.get_match_results_for_team(), MatchResult.WIN), width=3) + \
@@ -36,8 +36,8 @@ class Season(object):
                '{text: <{width}}'.format(
                    text=get_number_of_occurrences(self.get_match_results_for_team(), MatchResult.LOSS),
                    width=3) + \
-               '{text: <{width}}'.format(text=str(len(self.goals_for)) + '-' + str(len(self.goals_against)), width=6) + \
-               '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=4) + \
+               '{text: <{width}}'.format(text=str(len(self.goals_for)) + '-' + str(len(self.goals_against)), width=8) + \
+               '{text: <{width}}'.format(text=len(self.goals_for) - len(self.goals_against), width=6) + \
                '{text: <{width}}'.format(text=self.find_number_of_points(), width=4)
 
     def get_goals_grouped_by_player(self):
