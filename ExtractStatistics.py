@@ -77,7 +77,7 @@ def get_points_per_game_for_player(matches_for_team, name):
 
 def get_match_results_as_points(matches_for_team, team_name):
     results = get_match_results(matches_for_team, team_name)
-    points = []
+    points = [0] # removes off-by-one error in graph
     for result in results:
         if result == MatchResult.WIN:
             points.append(3)

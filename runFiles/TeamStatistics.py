@@ -6,7 +6,6 @@ import ExtractStatistics as Stats
 import PlotHelper as Plotter
 import objects.Season as Season
 
-
 directory = "../match_reports/"
 file_names = MapFileToObjects.get_files_from_directory(directory)
 
@@ -19,18 +18,50 @@ team_name = 'BMIL'
 matches_for_team = Stats.get_matches_for_team(matches, team_name)
 
 
-for player in season.get_players_and_number_of_matches_played().keys():
-    point_list = Stats.get_points_per_game_for_player(matches_for_team, player)
-    Plotter.plot_point_list_for_data(point_list, player)
+def get_matches_for_team(team_name):
+    return Stats.get_matches_for_team(matches, team_name)
 
-#plots points for team
-#points_for_team = Stats.get_match_results_as_points(matches_for_team, team_name)
-#Plotter.plot_point_list_for_data(points_for_team, team_name)
 
-#plots points per player
-#name = 'Tom Egil Arnesen'
-#point_list = Stats.get_points_per_game_for_player(matches_for_team, name)
-#Plotter.plot_point_list_for_data(point_list, name)
+def print_graph_for_all_players_in_team():
+    for player in season.get_players_and_number_of_matches_played().keys():
+        point_list = Stats.get_points_per_game_for_player(matches_for_team, player)
+        Plotter.plot_point_list_for_data(point_list, player)
 
-# todo Plot all teams in same graph with different colors?
-# todo make this file run interactively, by selecting team and then player to show stats for?
+
+def print_players_in_same_graph(top_scorers):
+    point_lists = {}
+    for player in top_scorers:
+        point_list = Stats.get_points_per_game_for_player(matches_for_team, player)
+        point_lists[player] = point_list
+    Plotter.plot_graphs_in_same_figure(point_lists)
+
+
+def plot_points_for_single_team():
+    points_for_team = Stats.get_match_results_as_points(matches_for_team, team_name)
+    Plotter.plot_point_list_for_data(points_for_team, team_name)
+
+
+def plot_points_per_player(player_name):
+    player_name = 'Tom Egil Arnesen'
+    point_list = Stats.get_points_per_game_for_player(matches_for_team, player_name)
+    Plotter.plot_point_list_for_data(point_list, player_name)
+
+
+def plot_team_points_in_same_graph():
+    team_names = [u'Lyn',u'BMIL',u'Lillestrøm',u'Vålerenga']
+    point_lists = {}
+    for team_name in team_names:
+        points_for_team = Stats.get_match_results_as_points(get_matches_for_team(team_name), team_name)
+        point_lists[team_name] = points_for_team
+    Plotter.plot_graphs_in_same_figure(point_lists)
+
+
+plot_team_points_in_same_graph()
+#print_graph_for_all_players_in_team()
+
+#plot_team_points_in_same_graph(matches)
+
+top_scorers = ['Bendik Fürst Mustad', 'Thomas Bergsmark', 'Aksel Tjøtta Stenvold', 'Emil Varre Sandøy']
+print_players_in_same_graph(top_scorers)
+
+#plot_points_for_single_team()
