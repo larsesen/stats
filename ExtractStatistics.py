@@ -52,7 +52,7 @@ def get_timestamps_within_period(timestamps):
 def get_matches_for_team(matches, team_name):
     matches_for_team = []
     for match in matches:
-        if match.home_team == team_name or match.away_team == team_name:
+        if unicode(match.home_team).encode('utf-8') == team_name or unicode(match.away_team).encode('utf-8') == team_name:
             matches_for_team.append(match)
     return matches_for_team
 
@@ -95,8 +95,8 @@ def get_match_results_as_points(matches_for_team, team_name):
 def get_match_results(matches_for_team, team_name):
     match_results = []
     for match in matches_for_team:
-        if match.home_team == team_name:
+        if unicode(match.home_team).encode('utf-8') == team_name:
             match_results.append(match.match_info.result_for_home_team)
-        elif match.away_team == team_name:
+        elif unicode(match.away_team).encode('utf-8') == team_name:
             match_results.append(match.match_info.result_for_away_team)
     return match_results

@@ -20,6 +20,7 @@ def plot_graphs_in_same_figure(point_lists):
     plt.figure().gca().xaxis.set_major_locator(MaxNLocator(integer=True))  # plot integers on x-axis
     plt.xlabel("Number of matches in season")
     plt.ylabel("points (accumulated)")
+    plt.title("BMIL top 4")
 
     for key, value in point_lists.iteritems():
         x = xrange(len(value))
